@@ -1,8 +1,9 @@
-# Here are the articles I've written for this course
+# Course Description
+In this course you will get an introduction to the main tools and ideas in the data scientist's toolbox. The course gives an overview of the data, questions, and tools that data analysts and data scientists work with. There are two components to this course. The first is a conceptual introduction to the ideas behind turning data into actionable knowledge. The second is a practical introduction to the tools that will be used in the program like version control, markdown, git, GitHub, R, and RStudio.
 
+## Articles 
 
-For this course, since it was theory-heavy and less code, I decided to write articles to solidify the concepts taught and 
-
+For this course, since it was theory-heavy and less code, I decided to write articles to solidify the concepts taught and explore the topics from different perspectives by writing about it.
 
 Index | About |
 --- | --- | 
@@ -13,3 +14,9 @@ Index | About |
 [Part 5](https://towardsdatascience.com/designing-experiments-in-data-science-23360d2ddf84)| The ability to design experiments to answer your Ds questions
 [Part 6](https://towardsdatascience.com/what-is-a-p-value-2cd0b1898e6f)| P-value & P-hacking
 [Part 7](https://towardsdatascience.com/big-data-its-benefits-challenges-and-future-6fddd69ab927)| Big Data, it's benefits, challenges, and future
+
+## What I've learned
+This course gave me the necessary foundation to start learning about Data Science from scratch. With concepts about what Data Science, Big Data and Data itself, and experimental design and the types of data analysis, I began to appreciate the importance of data and data analytics and how it shapes the world. The course also gave quick lessons on Rstudio, Version Control, Git, generally introductions to tools to help one start his or her journey in Data Science. 
+
+## Proof of completion
+[Certificate](https://coursera.org/share/7ef3598abe3541b950d8d769a7185def)
