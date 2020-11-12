@@ -9,8 +9,8 @@ No | Course Name | Link to Repo
 --- | --- | --- |
 1 | The Data Scientist's Toolbox  | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/1_DataScienceToolbox)
 2 | R Programming | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming)
-3 | Getting and Cleaning Data | [Link]()
-4 | Exploratory Data Analysis | [Link]()
+3 | Getting and Cleaning Data | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/3_Getting%26CleaningData)
+4 | Exploratory Data Analysis | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/4_ExploratoryDataAnalysis)
 5 | Reproducible Research | [Link]()
 6 | Statistical Inference | [Link]()
 7 | Regression Model | [Link]()
