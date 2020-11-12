@@ -2,8 +2,8 @@
 Repository for my code for the course [John Hopkins Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) 
 
 
-### Repository contents
-This repository includes 4 files, the R script named `run_analysis.R`, this read_me file you're reading now, the codebook file which explains more about the data set and the methodology, and the final tidy data set.
+### Specialization courses
+This specialization contains 10 courses.
 
 No | Course Name | Link to Repo
 --- | --- | --- |
