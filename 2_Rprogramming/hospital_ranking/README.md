@@ -19,8 +19,7 @@ Data zip file - [link](https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2FProg
 ## Code 
 Code | Instruction |
 --- | --- | 
-
-[outcome.R]() | Plot the 30-day mortality rates for heart attack
-[best.R]() | Finding the best hospital in a state
-[rankhospital.R]() | Ranking hospitals by outcome in a state
-[rankall.R]() | Ranking hospitals in all states
+[outcome.R](https://github.com/benthecoder/JohnHopkinsDataScience/blob/main/2_Rprogramming/hospital_ranking/outcome.R) | Plot the 30-day mortality rates for heart attack|
+[best.R](https://github.com/benthecoder/JohnHopkinsDataScience/blob/main/2_Rprogramming/hospital_ranking/best.R) | Finding the best hospital in a state| 
+[rankhospital.R](https://github.com/benthecoder/JohnHopkinsDataScience/blob/main/2_Rprogramming/hospital_ranking/rankhospital.R) | Ranking hospitals by outcome in a state|
+[rankall.R](https://github.com/benthecoder/JohnHopkinsDataScience/blob/main/2_Rprogramming/hospital_ranking/rankall.R) | Ranking hospitals in all states|

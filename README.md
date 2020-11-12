@@ -7,8 +7,8 @@ This specialization contains 10 courses.
 
 No | Course Name | Link to Repo
 --- | --- | --- |
-1 | The Data Scientist's Toolbox  | [Link]()
-2 | R Programming | [Link]()
+1 | The Data Scientist's Toolbox  | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/1_DataScienceToolbox)
+2 | R Programming | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming)
 3 | Getting and Cleaning Data | [Link]()
 4 | Exploratory Data Analysis | [Link]()
 5 | Reproducible Research | [Link]()
