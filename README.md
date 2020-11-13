@@ -21,6 +21,10 @@ No | Course Name | Link to Repo
 ## About the specialization
 This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results. In the final Capstone Project, you’ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material.
 
+## Resources 
+* [DS Specialization github io](http://datasciencespecialization.github.io)
+* [Data Science Specialization Course Notes by Xing Su](http://sux13.github.io/DataScienceSpCourseNotes/)
+
 ## Skills that I will gain
 * Github
 * R Programming
