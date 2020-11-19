@@ -37,4 +37,4 @@ This course is complemented with the book below
 * [Report Writing for Data Science in R - Roger D. Peng](https://leanpub.com/reportwriting)
 
 ## Proof of completion
-[Not yet completed]()
+[Certificate link](https://coursera.org/share/82097f1d7caeadd28b22d2a7c79724ba)
