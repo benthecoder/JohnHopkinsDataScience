@@ -51,7 +51,7 @@ This Specialization covers the concepts and tools you'll need throughout the ent
 
 ## Certificate for Data Science: Foundations using R Specialization
 
-![Certificate pdf](certificate_files/Foundations_w_R_specialization.pdf) 
+![Certificate for first half of specialization](certificate_files/Foundations_w_R_specialization.png) 
 
 View it online [here](https://coursera.org/share/82097f1d7caeadd28b22d2a7c79724ba)
 
