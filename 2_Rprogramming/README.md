@@ -14,4 +14,7 @@ This book complements this course well and is useful as a cheatsheet or referenc
 * [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
 
 ## Proof of completion
-[Certificate](https://coursera.org/share/ce74bc3d33b1aa8ff2f0dd7c87ea0dbb)
+
+![Certificate for second course](cert2.png) 
+
+[View it online](https://coursera.org/share/ce74bc3d33b1aa8ff2f0dd7c87ea0dbb)

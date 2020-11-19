@@ -19,4 +19,7 @@ Index | About |
 This course gave me the necessary foundation to start learning about Data Science from scratch. With concepts about what Data Science, Big Data and Data itself, and experimental design and the types of data analysis, I began to appreciate the importance of data and data analytics and how it shapes the world. The course also gave quick lessons on Rstudio, Version Control, Git, generally introductions to tools to help one start his or her journey in Data Science. 
 
 ## Proof of completion
-[Certificate](https://coursera.org/share/7ef3598abe3541b950d8d769a7185def)
+
+![Certificate for first course](cert1.png) 
+
+[View it online](https://coursera.org/share/7ef3598abe3541b950d8d769a7185def)
