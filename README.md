@@ -11,7 +11,7 @@ No | Course Name | Link to Repo
 2 | R Programming | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming)
 3 | Getting and Cleaning Data | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/3_Getting%26CleaningData)
 4 | Exploratory Data Analysis | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/4_ExploratoryDataAnalysis)
-5 | Reproducible Research | to be completed
+5 | Reproducible Research | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/5_ReproducibleResearch)
 6 | Statistical Inference | -
 7 | Regression Model | -
 8 | Practical Machine Learning | -
@@ -24,6 +24,16 @@ This Specialization covers the concepts and tools you'll need throughout the ent
 ## Resources 
 * [DS Specialization github io](http://datasciencespecialization.github.io)
 * [Data Science Specialization Course Notes by Xing Su](http://sux13.github.io/DataScienceSpCourseNotes/)
+
+## Books
+
+* [R for Data Science](https://r4ds.had.co.nz)
+* [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
+* [Exploratory Data Analysis with R - Roger D. Peng](https://bookdown.org/rdpeng/exdata/)
+* [Report Writing for Data Science in R - Roger D. Peng](https://leanpub.com/reportwriting)
+* [R Graphics Cookbook, 2nd edition](https://r-graphics.org)
+* [Practical Data Science with R](http://1.droppdf.com/files/EyDuc/manning-practical-data-science-with-r-2014.pdf)
+* [Advanced R, 2nd edition](https://adv-r.hadley.nz)
 
 ## Skills that I will gain
 * Github
@@ -38,3 +48,13 @@ This Specialization covers the concepts and tools you'll need throughout the ent
 * Cluster Analysis
 * Regression Analysis
 * Machine Learning
+
+## Certificate for Data Science: Foundations using R Specialization
+
+![Certificate pdf](certificate_files/Foundations_w_R_specialization.pdf) 
+
+View it online [here](https://coursera.org/share/82097f1d7caeadd28b22d2a7c79724ba)
+
+## Certificate for Data Science Specialization
+
+* To be completed
