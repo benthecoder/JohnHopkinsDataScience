@@ -24,6 +24,7 @@ This Specialization covers the concepts and tools you'll need throughout the ent
 * [DS Specialization github repo](https://github.com/DataScienceSpecialization/courses)
 * [DS Specialization github io](http://datasciencespecialization.github.io)
 * [Data Science Specialization Course Notes by Xing Su](http://sux13.github.io/DataScienceSpCourseNotes/)
+* [RStudio cheatsheets](https://rstudio.com/resources/cheatsheets/)
 
 ## Books
 
