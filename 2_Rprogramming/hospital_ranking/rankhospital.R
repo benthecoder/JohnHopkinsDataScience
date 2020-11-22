@@ -1,4 +1,6 @@
-rankhospital <- function(state, outcome, num="best") {
+library(data.table)
+
+rankHospital <- function(state, outcome, num="best") {
     # Read outcome data
     dt <- data.table::fread("data/outcome-of-care-measures.csv")
     
@@ -7,8 +9,8 @@ rankhospital <- function(state, outcome, num="best") {
     
     # change variable name to prevent confusion
     chosen_state <- state
-    
-    # Check state and outcome are valid
+
+    # Check state and outcome are valid, if not return warning message
     if (!chosen_state %in% unique(dt[["State"]])) {
         stop("Invalid state")
     }
@@ -16,47 +18,39 @@ rankhospital <- function(state, outcome, num="best") {
         stop("Invalid outcome")
     }
     
-    # simplify and lower case column names similar to outcome variable
-    setnames(dt, tolower(
-        sapply(
-            colnames(dt),
-            gsub,
-            pattern = "^Hospital 30-Day Death \\(Mortality\\) Rates from ",
-            replacement = ""
-        )
-    ))
-    
-    # filtering state
-    dt <- dt[state == chosen_state]
-    
-    # grab all columns with patterns hospital name, state and given outcome
-    col_indices <-
-        grep(paste0("hospital name|state|^", outcome), colnames(dt))
-    
-    # use .SD to filter out unnecessary columns
-    dt <- dt[, .SD, .SDcols = col_indices]
-    
-    # change class of outcome to numeric
-    dt[, outcome] <- dt[, suppressWarnings(as.numeric(get(outcome)))]
-    
-    # remove all NAs
-    dt <- dt[complete.cases(dt), ]
-    
-    # order columns with order() function
-    dt <- dt[order(get(outcome), `hospital name`)]
-    
-    # .I creates vector of length of rows
-    dt <- dt[,  .(`hospital name` = `hospital name`, state = state, rate = get(outcome), Rank = .I)]
-    
-    if (num == "best"){
-        return(dt[1,`hospital name`])
+    dt <- dt %>% 
+        rename_with(~ tolower(gsub("^Hospital 30-Day Death \\(Mortality\\) Rates from ", "", .x))) %>%
+        filter(state == chosen_state) %>%
+        mutate(rate = suppressWarnings(as.numeric(get(outcome)))) %>%
+        clean_names() %>%
+        select(hospital_name, state, rate) %>%
+        filter(complete.cases(.)) %>%
+        arrange(rate, hospital_name) %>%
+        mutate(rank = row_number())  
+
+    if (num == "best") {
+        unlist(head(dt[[1]], 1))
     }
     
-    # .N is the length of column
-    if (num == "worst"){
-        return(dt[.N,`hospital name`])
+    else if (num == "worst") {
+        unlist(tail(dt[[1]], 1))
     }
     
-    return(dt[num,`hospital name`])
+    else {
+        dt %>% 
+            slice(num) %>%
+            select(hospital_name) %>%
+            unlist()
+    }
 }
-    
+
+# sample outputs
+
+rankHospital("TX", "heart failure", "best")
+# 'FORT DUNCAN MEDICAL CENTER'
+
+rankHospital("MD", "heart attack", "worst")
+# 'HARFORD MEMORIAL HOSPITAL'
+
+rankHospital("MN", "heart attack", 5000) 
+# rank that breaks limit returns nothing

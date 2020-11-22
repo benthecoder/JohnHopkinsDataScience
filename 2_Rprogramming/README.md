@@ -8,10 +8,13 @@ Articles are coming!
 ## What I've learned
 I'm a beginner in Python, and this course was very beginner friendly in introducing the R programming language to me. At first the syntax was quite hard to get used to, but I found it very intuitive and easy to use afterwards, especially with the tidyverse packages. To name a few of the things I've learned that I found particularly useful - Dates and times, data manipulation w the Dplyr package, scoping rules, loop functions, regex, profiling code, simulating data, and parallel computation. The assignments were harder that I imagined and were time-intensive for me. Overall this course was quite dense and I learned a lot from it. 
 
-## Books for the course
-This book complements this course well and is useful as a cheatsheet or reference.
+## Projects
 
-* [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
+No | Project Title | Link to folder
+--- | --- | --- | 
+1 | Air Pollution | --- | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/Air_pollution)
+2 | Cache Matrix | --- | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/cache-matrix)
+3 | Hospital Ranking | --- | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/hospital_ranking)
 
 ## Proof of completion
 
