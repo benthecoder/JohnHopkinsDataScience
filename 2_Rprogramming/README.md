@@ -14,9 +14,9 @@ The main goal of the 3 projects were to give write functions to interact with da
 
 No | Project Title | About
 --- | --- | --- 
-1 | [Air Pollution](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/Air_pollution) | Writing functions to interact with Air pollution data
-2 | [Cache Matrix](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/cache-matrix) | Writing a function to cache inverse of a matrix
-3 | [Hospital Ranking](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/hospital_ranking) | Writing functions to rank hospitals by mortality rate
+1 | [Air Pollution](Air_pollution) | Writing functions to interact with Air pollution data
+2 | [Cache Matrix](cache-matrix) | Writing a function to cache inverse of a matrix
+3 | [Hospital Ranking](hospital_ranking) | Writing functions to rank hospitals by mortality rate
 
 ## Proof of completion
 

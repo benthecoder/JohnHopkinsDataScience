@@ -7,30 +7,30 @@ This Data Science specialization contains 10 courses and the first five courses 
 No | Course Name | Date Completed | Link to Repo 
 --- | --- | --- | ---
 1 | The Data Scientist's Toolbox  | August 29, 2020 | [Link](1_DataScienceToolbox)
-2 | R Programming |  October 19, 2020 | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming)
-3 | Getting and Cleaning Data | October 31, 2020 | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/3_Getting%26CleaningData)
-4 | Exploratory Data Analysis | November 12, 2020 | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/4_ExploratoryDataAnalysis)
-5 | Reproducible Research| November 19, 2020 | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/5_ReproducibleResearch)
-6 | Statistical Inference | - | -
-7 | Regression Model | - | -
-8 | Practical Machine Learning | - | -
-9 | Developing Data Products | - | -
-10| Data Science Capstone | - | -
+2 | R Programming |  October 19, 2020 | [Link](2_Rprogramming)
+3 | Getting and Cleaning Data | October 31, 2020 | [Link](3_Getting%26CleaningData)
+4 | Exploratory Data Analysis | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
+5 | Reproducible Research| November 19, 2020 | [Link](5_ReproducibleResearch)
+6 | Statistical Inference |  | 
+7 | Regression Model |  | 
+8 | Practical Machine Learning |  | 
+9 | Developing Data Products |  | 
+10| Data Science Capstone |  | 
 
 ## About the specialization
 This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results. In the final Capstone Project, you’ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material.
 
 ## Projects
- Course  | Project 1| Project 2 | Project 3 
-- -------|----------|-----------|----------
- R Programming | [Air Pollution](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/Air_pollution) | [Cache Matrix](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/cache-matrix) | [Hospital Ranking](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/hospital_ranking)
-| Getting and Cleaning Data  |                                                                                                               |           |           |
-| Exploratory Data Analysis  |                                                                                                               |           |           |
-| Reproducible Research      |                                                                                                               |           |           |
-| Statistical Inference      |                                                                                                               |           |           |
-| Regression Model           |                                                                                                               |           |           |
-| Practical Machine Learning |                                                                                                               |           |           |
-| Developing Data Products   |                                                                                                               |           |           |
+ Course No. | Project 1| Project 2 | Project 3 
+ ----------|----------|-----------|----------
+ 2 | [Air Pollution](2_Rprogramming/Air_pollution) | [Cache Matrix](2_Rprogramming/cache-matrix) | [Hospital Ranking](2_Rprogramming/hospital_ranking)
+ 3 | [Tidy Data](3_Getting%26CleaningData) |  |  
+ 4 | [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/) | [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/) |
+ 5 | [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1); [rpubs](https://rpubs.com/benthecoder/691112) | [Storm Analysis](5_ReproducibleResearch/knitr_project2); [rpubs](https://rpubs.com/benthecoder/storm-data-analysis) |  
+ 6 |  |  |  
+ 7 |  |  |  
+ 8 |  |  |  
+ 9 |  |  |  
 
 ## Resources 
 * [DS Specialization github repo](https://github.com/DataScienceSpecialization/courses)
