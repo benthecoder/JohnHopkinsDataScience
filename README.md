@@ -30,20 +30,25 @@ This Specialization covers the concepts and tools you'll need throughout the ent
 
 There are great books for statistics & data science with R, most of these are from the course and others are my own addition.
 
+### From the course
 * [R for Data Science](https://r4ds.had.co.nz)
 * [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
 * [Exploratory Data Analysis with R](https://bookdown.org/rdpeng/exdata/)
 * [Report Writing for Data Science in R](https://leanpub.com/reportwriting)
+
+### Others
 * [R Graphics Cookbook, 2nd edition](https://r-graphics.org)
 * [Practical Data Science with R](http://1.droppdf.com/files/EyDuc/manning-practical-data-science-with-r-2014.pdf)
 * [Advanced R, 2nd edition](https://adv-r.hadley.nz)
 * [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
+* [An Introduction to R](https://intro2r.com)
+* [Mastering Shiny](https://mastering-shiny.org/index.html)
+* [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
 * [Text Mining with R](https://www.tidytextmining.com)
 * [Efficient R programming](https://csgillespie.github.io/efficientR/)
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 * [Statistical Inference via Data Science](https://moderndive.com)
 * [Data Science Live Book](https://livebook.datascienceheroes.com)
-
 
 ## Skills that I will gain
 * Github
