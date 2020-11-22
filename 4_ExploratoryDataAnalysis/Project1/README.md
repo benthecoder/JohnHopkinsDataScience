@@ -82,3 +82,20 @@ When you are finished with the assignment, push your git repository to
 GitHub so that the GitHub version of your repository is up to
 date. There should be four PNG files and four R code files.
 
+## Plots
+
+### Plot 1 - [code](https://github.com/benthecoder/JohnHopkinsDataScience/blob/main/4_ExploratoryDataAnalysis/Project1/plot1.R)
+
+![Plot 1](plot1.png) 
+
+### Plot 2 - [code](https://github.com/benthecoder/JohnHopkinsDataScience/blob/main/4_ExploratoryDataAnalysis/Project1/plot2.R)
+
+![Plot 2](plot2.png) 
+
+### Plot 3 - [code](https://github.com/benthecoder/JohnHopkinsDataScience/blob/main/4_ExploratoryDataAnalysis/Project1/plot3.R)
+
+![Plot 3](plot3.png) 
+
+### Plot 4 - [code](https://github.com/benthecoder/JohnHopkinsDataScience/blob/main/4_ExploratoryDataAnalysis/Project1/plot4.R)
+
+![Plot 4](plot4.png) 
