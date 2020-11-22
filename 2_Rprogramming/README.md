@@ -12,9 +12,9 @@ I'm a beginner in Python, and this course was very beginner friendly in introduc
 
 No | Project Title | Link to folder
 --- | --- | --- 
-1 | Air Pollution | --- | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/Air_pollution)
-2 | Cache Matrix | --- | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/cache-matrix)
-3 | Hospital Ranking | --- | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/hospital_ranking)
+1 | Air Pollution | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/Air_pollution)
+2 | Cache Matrix | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/cache-matrix)
+3 | Hospital Ranking | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/hospital_ranking)
 
 ## Proof of completion
 
