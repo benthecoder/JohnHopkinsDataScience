@@ -3,20 +3,7 @@ Repository for my code for the course [John Hopkins Data Science Specialization]
 
 ## About the specialization
 This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results. In the final Capstone Project, you’ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material.
-
-## Skills that I will gain
-* Github
-* R Programming
-* Rstudio
-* Debugging
-* Data Science
-* Data Cleaning
-* Data Manipulation
-* Data Analysis
-* Regular Expression
-* Cluster Analysis
-* Regression Analysis
-* Machine Learning
+ 
 
 ### Specialization courses
 
@@ -49,7 +36,6 @@ No | Course Name | Date Completed | Link to Repo
 
 ## Resources 
 
-
 ### Official repo and notes
 * [DS Specialization github repo](https://github.com/DataScienceSpecialization/courses)
 * [DS Specialization github io](http://datasciencespecialization.github.io)
@@ -71,7 +57,7 @@ No | Course Name | Date Completed | Link to Repo
 
 ### Books
 
-There are great books for statistics & data science with R, most of these are from the course and others are my own addition.
+There are great books by great authors related to R programming. 
 
 #### From the course
 * [R for Data Science](https://r4ds.had.co.nz)
@@ -103,6 +89,10 @@ There are great books for statistics & data science with R, most of these are fr
 * [RStudio Tips](https://twitter.com/rstudiotips)
 * [One R Tip a Day](https://twitter.com/RLangTip)
 * [Nathan Yao](https://twitter.com/flowingdata)
+
+## Podcasts
+
+* [Not So Standard Deviation](https://nssdeviations.com)
 
 ## Certificate for Data Science: Foundations using R Specialization
 
