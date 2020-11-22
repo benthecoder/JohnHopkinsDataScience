@@ -10,11 +10,13 @@ I'm a beginner in Python, and this course was very beginner friendly in introduc
 
 ## Projects
 
-No | Project Title | Link to folder
+The main goal of the 3 projects were to give write functions to interact with data for various purposes, writing functions is a useful skill when working with certain tasks that aren't given in pacakges.
+
+No | Project Title | About
 --- | --- | --- 
-1 | Air Pollution | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/Air_pollution)
-2 | Cache Matrix | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/cache-matrix)
-3 | Hospital Ranking | [link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/hospital_ranking)
+1 | [Air Pollution](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/Air_pollution) | Writing functions to interact with Air pollution data
+2 | [Cache Matrix](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/cache-matrix) | Writing a function to cache inverse of a matrix
+3 | [Hospital Ranking](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming/hospital_ranking) | Writing functions to rank hospitals by mortality rate
 
 ## Proof of completion
 
