@@ -5,7 +5,7 @@ Repository for my code for the course [John Hopkins Data Science Specialization]
 This Data Science specialization contains 10 courses and the first five courses are also a part of the Data Science: Foundations using R specialization.
 
 No | Course Name | Date Completed | Link to Repo 
---- | --- | --- |
+--- | --- | --- | ---
 1 | The Data Scientist's Toolbox  | August 29, 2020
 | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/1_DataScienceToolbox)
 2 | R Programming |  October 19, 2020 | [Link](https://github.com/benthecoder/JohnHopkinsDataScience/tree/main/2_Rprogramming)
