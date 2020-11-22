@@ -1,36 +1,8 @@
 # John Hopkins Data Science Specialization Coursera
 Repository for my code for the course [John Hopkins Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) 
 
-### Specialization courses
-This Data Science specialization contains 10 courses and the first five courses are also a part of the Data Science: Foundations using R specialization.
-
 ## About the specialization
 This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results. In the final Capstone Project, you’ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material.
-
-No | Course Name | Date Completed | Link to Repo 
---- | --- | --- | ---
-1 | The Data Scientist's Toolbox  | August 29, 2020 | [Link](1_DataScienceToolbox)
-2 | R Programming |  October 19, 2020 | [Link](2_Rprogramming)
-3 | Getting and Cleaning Data | October 31, 2020 | [Link](3_Getting%26CleaningData)
-4 | Exploratory Data Analysis | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
-5 | Reproducible Research| November 19, 2020 | [Link](5_ReproducibleResearch)
-6 | Statistical Inference |  | 
-7 | Regression Model |  | 
-8 | Practical Machine Learning |  | 
-9 | Developing Data Products |  | 
-10| Data Science Capstone |  | 
-
-## Projects
- Course No. | Project 1| Project 2 | Project 3 
- ----------|----------|-----------|----------
- 2 | [Air Pollution](2_Rprogramming/Air_pollution) | [Cache Matrix](2_Rprogramming/cache-matrix) | [Hospital Ranking](2_Rprogramming/hospital_ranking)
- 3 | [Tidy Data](3_Getting%26CleaningData) |  |  
- 4 | [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/) | [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/) |
- 5 | [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1), [rpubs](https://rpubs.com/benthecoder/691112) | [Storm Analysis](5_ReproducibleResearch/knitr_project2), [rpubs](https://rpubs.com/benthecoder/storm-data-analysis) |  
- 6 |  |  |  
- 7 |  |  |  
- 8 |  |  |  
- 9 |  |  |  
 
 ## Skills that I will gain
 * Github
@@ -46,16 +18,34 @@ No | Course Name | Date Completed | Link to Repo
 * Regression Analysis
 * Machine Learning
 
-## Certificate for Data Science: Foundations using R Specialization
+### Specialization courses
 
-![Certificate for first half of specialization](certificate_files/Foundations_w_R_specialization.png) 
+This Data Science specialization contains 10 courses and the first five courses are also a part of the Data Science: Foundations using R specialization.
 
-View it online [here](https://coursera.org/share/82097f1d7caeadd28b22d2a7c79724ba)
+No | Course Name | Date Completed | Link to Repo 
+:---: |:---:  | :---: | :---: 
+1 | The Data Scientist's Toolbox  | August 29, 2020 | [Link](1_DataScienceToolbox)
+2 | R Programming |  October 19, 2020 | [Link](2_Rprogramming)
+3 | Getting and Cleaning Data | October 31, 2020 | [Link](3_Getting%26CleaningData)
+4 | Exploratory Data Analysis | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
+5 | Reproducible Research| November 19, 2020 | [Link](5_ReproducibleResearch)
+6 | Statistical Inference |  | 
+7 | Regression Model |  | 
+8 | Practical Machine Learning |  | 
+9 | Developing Data Products |  | 
+10| Data Science Capstone |  | 
 
-## Certificate for Data Science Specialization
-
-* To be completed
-
+## Projects
+ No | Project 1| Project 2 | Project 3 
+ :---: |:---: |:---: |:---: 
+ 2 | [Air Pollution](2_Rprogramming/Air_pollution) | [Cache Matrix](2_Rprogramming/cache-matrix) | [Hospital Ranking](2_Rprogramming/hospital_ranking)
+ 3 | [Tidy Data](3_Getting%26CleaningData) |  |  
+ 4 | [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/) | [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/) |
+ 5 | [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1), [rpubs](https://rpubs.com/benthecoder/691112) | [Storm Analysis](5_ReproducibleResearch/knitr_project2), [rpubs](https://rpubs.com/benthecoder/storm-data-analysis) |  
+ 6 |  |  |  
+ 7 |  |  |  
+ 8 |  |  |  
+ 9 |  |  |  
 
 ## Resources 
 
@@ -114,3 +104,12 @@ There are great books for statistics & data science with R, most of these are fr
 * [One R Tip a Day](https://twitter.com/RLangTip)
 * [Nathan Yao](https://twitter.com/flowingdata)
 
+## Certificate for Data Science: Foundations using R Specialization
+
+![Certificate for first half of specialization](certificate_files/Foundations_w_R_specialization.png) 
+
+View it online [here](https://coursera.org/share/82097f1d7caeadd28b22d2a7c79724ba)
+
+## Certificate for Data Science Specialization
+
+* To be completed
