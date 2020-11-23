@@ -65,6 +65,7 @@ There are great books by great authors related to R programming.
 * [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
 * [Exploratory Data Analysis with R](https://bookdown.org/rdpeng/exdata/)
 * [Report Writing for Data Science in R](https://leanpub.com/reportwriting)
+* [Statistical Inference via Data Science](https://moderndive.com)
 
 #### Others
 * [R Graphics Cookbook, 2nd edition](https://r-graphics.org)
@@ -77,7 +78,6 @@ There are great books by great authors related to R programming.
 * [Text Mining with R](https://www.tidytextmining.com)
 * [Efficient R programming](https://csgillespie.github.io/efficientR/)
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
-* [Statistical Inference via Data Science](https://moderndive.com)
 * [Data Science Live Book](https://livebook.datascienceheroes.com)
 
 ### Twitter accounts
