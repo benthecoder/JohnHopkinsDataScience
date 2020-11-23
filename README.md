@@ -54,6 +54,7 @@ No | Course Name | Date Completed | Link to Repo
 * [from Data to Viz](https://www.data-to-viz.com) 
 * [R Graph Gallery](https://www.r-graph-gallery.com)
 * [RStudio cheatsheets](https://rstudio.com/resources/cheatsheets/)
+* [RStudio::conf 2019 cheatsheets](https://rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
 
 ### Books
 
