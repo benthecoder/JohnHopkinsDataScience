@@ -56,6 +56,9 @@ No | Course Name | Date Completed | Link to Repo
 * [RStudio cheatsheets](https://rstudio.com/resources/cheatsheets/)
 * [RStudio::conf 2019 cheatsheets](https://rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
 
+### Website references 
+* [Seeing Theory](https://seeing-theory.brown.edu/index.html)
+
 ### Books
 
 There are great books by great authors related to R programming. 
