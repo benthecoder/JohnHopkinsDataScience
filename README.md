@@ -16,7 +16,7 @@ No | Course Name | Date Completed | Link to Repo
 3 | Getting and Cleaning Data | October 31, 2020 | [Link](3_Getting%26CleaningData)
 4 | Exploratory Data Analysis | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
 5 | Reproducible Research| November 19, 2020 | [Link](5_ReproducibleResearch)
-6 | Statistical Inference |  | 
+6 | Statistical Inference |  | [Link](6_StatisticalInference)
 7 | Regression Model |  | 
 8 | Practical Machine Learning |  | 
 9 | Developing Data Products |  | 
@@ -65,12 +65,14 @@ There are great books by great authors related to R programming.
 * [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
 * [Exploratory Data Analysis with R](https://bookdown.org/rdpeng/exdata/)
 * [Report Writing for Data Science in R](https://leanpub.com/reportwriting)
-* [Statistical Inference via Data Science](https://moderndive.com)
+* [Statistical Inference for Data Science](https://leanpub.com/LittleInferenceBook/read)
 
 #### Others
+* [Big Book of R](https://www.bigbookofr.com/index.html)
 * [R Graphics Cookbook, 2nd edition](https://r-graphics.org)
 * [Practical Data Science with R](http://1.droppdf.com/files/EyDuc/manning-practical-data-science-with-r-2014.pdf)
 * [Advanced R, 2nd edition](https://adv-r.hadley.nz)
+* [Statistical Inference via Data Science](https://moderndive.com)
 * [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
 * [An Introduction to R](https://intro2r.com)
 * [Mastering Shiny](https://mastering-shiny.org/index.html)
