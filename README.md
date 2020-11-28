@@ -59,6 +59,9 @@ No | Course Name | Date Completed | Link to Repo
 ### Website references 
 * [Seeing Theory](https://seeing-theory.brown.edu/index.html)
 
+### Fun Projects
+* [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
+
 ### Books
 
 There are great books by great authors related to R programming. 
@@ -70,20 +73,48 @@ There are great books by great authors related to R programming.
 * [Report Writing for Data Science in R](https://leanpub.com/reportwriting)
 * [Statistical Inference for Data Science](https://leanpub.com/LittleInferenceBook/read)
 
-#### Others
-* [Big Book of R](https://www.bigbookofr.com/index.html)
-* [R Graphics Cookbook, 2nd edition](https://r-graphics.org)
-* [Practical Data Science with R](http://1.droppdf.com/files/EyDuc/manning-practical-data-science-with-r-2014.pdf)
-* [Advanced R, 2nd edition](https://adv-r.hadley.nz)
-* [Statistical Inference via Data Science](https://moderndive.com)
-* [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
+#### Beginner
 * [An Introduction to R](https://intro2r.com)
+* [Big Book of R](https://www.bigbookofr.com/index.html)
+* [Hands-on Programming with R](https://rstudio-education.github.io/hopr/)
+* [The Tidynomicon](https://gvwilson.github.io/tidynomicon/)
+* [R Graphics Cookbook, 2nd edition](https://r-graphics.org)
+
+#### Advanced
+* [Advanced R, 2nd edition](https://adv-r.hadley.nz)
+* [Efficient R programming](https://csgillespie.github.io/efficientR/)
+
+#### Data Science
+* [Introduction to Data Science, Data Analysis and Prediction Algorithms with R](https://rafalab.github.io/dsbook/)
+* [Data Science Live Book](https://livebook.datascienceheroes.com)
+* [Practical Data Science with R](http://1.droppdf.com/files/EyDuc/manning-practical-data-science-with-r-2014.pdf)
+* [Data Skills for Reproducible Science](https://psyteachr.github.io/msc-data-skills/)
+* [Statistical Inference via Data Science: A ModernDive into R and the tidyverse](https://moderndive.com)
+
+#### Statistics
+* [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
+
+#### Machine Learning
+* [Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)
+* [Machine Learning](https://m-clark.github.io/introduction-to-machine-learning/)
+* [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/)
+* [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
+* [Advanced Statistical Computing](https://bookdown.org/rdpeng/advstatcomp/)
+
+#### Supplementary 
+* [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 * [Mastering Shiny](https://mastering-shiny.org/index.html)
 * [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
+
+
+
+
+
+
+
 * [Text Mining with R](https://www.tidytextmining.com)
-* [Efficient R programming](https://csgillespie.github.io/efficientR/)
-* [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
-* [Data Science Live Book](https://livebook.datascienceheroes.com)
+
+
 
 ### Twitter accounts
 
