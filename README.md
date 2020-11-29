@@ -105,16 +105,7 @@ There are great books by great authors related to R programming.
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 * [Mastering Shiny](https://mastering-shiny.org/index.html)
 * [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
-
-
-
-
-
-
-
 * [Text Mining with R](https://www.tidytextmining.com)
-
-
 
 ### Twitter accounts
 
