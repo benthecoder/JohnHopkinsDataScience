@@ -34,6 +34,8 @@ No | Course Name | Date Completed | Link to Repo
  8 |  |  |  
  9 |  |  |  
 
+---
+
 ## Resources 
 
 ### Official repo and notes
@@ -55,8 +57,7 @@ No | Course Name | Date Completed | Link to Repo
 * [R Graph Gallery](https://www.r-graph-gallery.com)
 * [RStudio cheatsheets](https://rstudio.com/resources/cheatsheets/)
 * [RStudio::conf 2019 cheatsheets](https://rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
-
-### Website references 
+* [Probability Cheatsheet](https://tinyurl.com/prob-cheatsheet)
 * [Seeing Theory](https://seeing-theory.brown.edu/index.html)
 
 ### Fun Projects
@@ -121,6 +122,8 @@ There are great books by great authors related to R programming.
 ## Podcasts
 
 * [Not So Standard Deviation](https://nssdeviations.com)
+
+---
 
 ## Certificate for Data Science: Foundations using R Specialization
 
