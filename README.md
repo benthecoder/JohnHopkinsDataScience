@@ -22,17 +22,26 @@ No | Course Name | Date Completed | Link to Repo
 9 | Developing Data Products |  | 
 10| Data Science Capstone |  | 
 
-## Projects
- No | Project 1| Project 2 | Project 3 
- :---: |:---: |:---: |:---: 
- 2 | [Air Pollution](2_Rprogramming/Air_pollution) | [Cache Matrix](2_Rprogramming/cache-matrix) | [Hospital Ranking](2_Rprogramming/hospital_ranking)
- 3 | [Tidy Data](3_Getting%26CleaningData) |  |  
- 4 | [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/) | [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/) |
- 5 | [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1), [rpubs](https://rpubs.com/benthecoder/691112) | [Storm Analysis](5_ReproducibleResearch/knitr_project2), [rpubs](https://rpubs.com/benthecoder/storm-data-analysis) |  
- 6 |  |  |  
- 7 |  |  |  
- 8 |  |  |  
- 9 |  |  |  
+##  Projects
+
+<details>
+    <summary>Projects from the course (click to expand)</summary>
+<!-- toc -->
+* R Programming
+  - [Air Pollution](2_Rprogramming/Air_pollution) 
+  - [Cache Matrix](2_Rprogramming/cache-matrix)
+  - [Hospital Ranking](2_Rprogramming/hospital_ranking)
+* Getting and Cleaning Data
+  - [Tidy Data](3_Getting%26CleaningData)
+* Exploratory Data Analysis
+  - [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/)
+  - [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/)
+* Reproducible Research
+  - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) | [rpubs](https://rpubs.com/benthecoder/691112)
+  - [Storm Analysis](5_ReproducibleResearch/knitr_project2) | [rpubs](https://rpubs.com/benthecoder/storm-data-analysis)
+
+<!-- tocstop -->
+</details>
 
 ---
 
