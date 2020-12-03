@@ -73,8 +73,22 @@ No | Course Name | Date Completed | Link to Repo
 ### Fun Projects
 * [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
 
-### Books
+### Twitter accounts
 
+* [Roger D. Peng](https://twitter.com/rdpeng)
+* [Hadley Wickham](https://twitter.com/hadleywickham)
+* [Mine Çetinkaya-Rundel](https://twitter.com/minebocek)
+* [Thomas Lin Pedersen](https://twitter.com/thomasp85)
+* [RStudio](https://twitter.com/rstudio)
+* [RStudio Tips](https://twitter.com/rstudiotips)
+* [One R Tip a Day](https://twitter.com/RLangTip)
+* [Nathan Yao](https://twitter.com/flowingdata)
+
+### Podcasts
+
+* [Not So Standard Deviation](https://nssdeviations.com)
+
+### Books
 There are great books by great authors related to R programming. 
 
 #### From the course
@@ -118,29 +132,16 @@ There are great books by great authors related to R programming.
 * [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
 * [Text Mining with R](https://www.tidytextmining.com)
 
-### Twitter accounts
-
-* [Roger D. Peng](https://twitter.com/rdpeng)
-* [Hadley Wickham](https://twitter.com/hadleywickham)
-* [Mine Çetinkaya-Rundel](https://twitter.com/minebocek)
-* [Thomas Lin Pedersen](https://twitter.com/thomasp85)
-* [RStudio](https://twitter.com/rstudio)
-* [RStudio Tips](https://twitter.com/rstudiotips)
-* [One R Tip a Day](https://twitter.com/RLangTip)
-* [Nathan Yao](https://twitter.com/flowingdata)
-
-## Podcasts
-
-* [Not So Standard Deviation](https://nssdeviations.com)
-
 ---
 
-## Certificate for Data Science: Foundations using R Specialization
+## Certificates
+
+### Data Science: Foundations using R Specialization
 
 ![Certificate for first half of specialization](certificate_files/Foundations_w_R_specialization.png) 
 
 View it online [here](https://coursera.org/share/82097f1d7caeadd28b22d2a7c79724ba)
 
-## Certificate for Data Science Specialization
+### Data Science Specialization
 
 * To be completed
