@@ -63,12 +63,21 @@ No | Course Name | Date Completed | Link to Repo
 * [data imaginist](https://www.data-imaginist.com)
 
 ### Cheatsheets
-* [from Data to Viz](https://www.data-to-viz.com) 
-* [R Graph Gallery](https://www.r-graph-gallery.com)
+
+#### R
 * [RStudio cheatsheets](https://rstudio.com/resources/cheatsheets/)
 * [RStudio::conf 2019 cheatsheets](https://rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
+
+#### Data Viz
+* [R Graph Gallery](https://www.r-graph-gallery.com)
+* [from Data to Viz](https://www.data-to-viz.com) 
+
+#### Statistics & Probability
 * [Probability Cheatsheet](https://tinyurl.com/prob-cheatsheet)
 * [Seeing Theory](https://seeing-theory.brown.edu/index.html)
+* [mit stats](https://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf)
+* [harvard stats](https://tinyurl.com/harvard-stats)
+* [stanford](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics)
 
 ### Fun Projects
 * [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
