@@ -26,6 +26,7 @@ No | Course Name | Date Completed | Link to Repo
 
 <details>
     <summary>Projects from the course (click to expand)</summary>
+ 
 <!-- toc -->
 * R Programming
   - [Air Pollution](2_Rprogramming/Air_pollution) 
@@ -39,8 +40,8 @@ No | Course Name | Date Completed | Link to Repo
 * Reproducible Research
   - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) | [rpubs](https://rpubs.com/benthecoder/691112)
   - [Storm Analysis](5_ReproducibleResearch/knitr_project2) | [rpubs](https://rpubs.com/benthecoder/storm-data-analysis)
-
 <!-- tocstop -->
+
 </details>
 
 ---
