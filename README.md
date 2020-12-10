@@ -61,6 +61,7 @@ No | Course Name | Date Completed | Link to Repo
 * [r4 stats](r4stats.com)
 * [Quick R by Data Camp](https://www.statmethods.net/index.html)
 * [data imaginist](https://www.data-imaginist.com)
+* [Probably Overthinking it](https://www.allendowney.com/blog/)
 
 ### Cheatsheets
 
