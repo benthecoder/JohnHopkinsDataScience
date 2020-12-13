@@ -29,7 +29,7 @@ No | Course Name | Date Completed | Link to Repo
   - [Cache Matrix](2_Rprogramming/cache-matrix)
   - [Hospital Ranking](2_Rprogramming/hospital_ranking)
 * Getting and Cleaning Data
-  - [Tidy Data](3_Getting%26CleaningData)
+  - [Tidy Data](3_Getting%26CleaningData/tidy_data)
 * Exploratory Data Analysis
   - [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/)
   - [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/)
