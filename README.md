@@ -34,8 +34,8 @@ No | Course Name | Date Completed | Link to Repo
   - [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/)
   - [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/)
 * Reproducible Research
-  - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) | [rpubs](https://rpubs.com/benthecoder/691112)
-  - [Storm Analysis](5_ReproducibleResearch/knitr_project2) | [rpubs](https://rpubs.com/benthecoder/storm-data-analysis)
+  - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) ([rpubs](https://rpubs.com/benthecoder/691112))
+  - [Storm Analysis](5_ReproducibleResearch/knitr_project2) ([rpubs](https://rpubs.com/benthecoder/storm-data-analysis))
 
 ---
 
