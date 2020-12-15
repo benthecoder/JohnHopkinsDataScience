@@ -48,10 +48,11 @@ No | Course Name | Date Completed | Link to Repo
 
 ### Blogs
 * [R bloggers](https://www.r-bloggers.com)
-* [Yihui's Blog](https://yihui.org/en/)
 * [Simply Statistics](https://simplystatistics.org)
 * [RStudio Blog](https://blog.rstudio.com)
 * [r4 stats](r4stats.com)
+* [Variance Explained](http://varianceexplained.org/posts/)
+* [Yihui's Blog](https://yihui.org/en/)
 * [Quick R by Data Camp](https://www.statmethods.net/index.html)
 * [data imaginist](https://www.data-imaginist.com)
 * [Probably Overthinking it](https://www.allendowney.com/blog/)
