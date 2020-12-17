@@ -12,18 +12,18 @@ This course was overall the most complete one, in the sense that I got a good ov
 
 Throughout the course, a great list for the steps in data analysis was given, and I got the opportunity to go hands-on on a data analysis project, although in terms of statisitcal modelling I am still lacking of the necessary foundation to understand it.
 
-1. Steps in data analysis
-2. Define question
-3. Define ideal data set
-4. Determine what data you can access
-5. Obtain data
-6. Clean data
-7. Exploratory Data Analysis
-8. Statistical Prediction/modeling
-9. Interpret results
-10. Challenge results
-11. Synthesize/write up results
-12. Create reproducible code
+### Steps in data analysis
+1. Define question
+2. Define ideal data set
+3. Determine what data you can access
+4. Obtain data
+5. Clean data
+6. Exploratory Data Analysis
+7. Statistical Prediction/modeling
+8. Interpret results
+9. Challenge results
+10. Synthesize/write up results
+11. Create reproducible code
 
 Towards the end, I also learned about R Markdown and using Knitr to transform them into html pages, and ultimately publish them to rpubs. I love how I was finally able to go from the groundworks of syntax, theories and concepts, and having my analysis on a web page and seeing my work gave me a sense of accomplishment. 
 
