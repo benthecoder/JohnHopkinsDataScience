@@ -1,0 +1,230 @@
+---
+title: "Sample vs Theoretical Exponential Distribution in R"
+author: "Benedict Neo"
+date: "16/12/2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# Overview
+
+In this report, I will be investigating the exponential distribution in R and 
+compare it with the Central Limit Theorem (CLT). I will be investigating the distribution of averages of 40 exponentials, and a total of a thousand simulations. 
+
+### What is exponential distribution?
+From Wikipedia: Exponential distribution describes times between events happening at constant rate lambda with expected value 1/lambda.
+
+In summary, this report will 
+1. Show the sample mean and compare it to the theoretical mean of the distribution
+2. Show how variable the sample is (via variance) and compare it to the theoretical
+variance of the distribution
+3. Show that the distribution is approximately normal
+
+# Simulation
+
+The exponential distribution is simulated with `rexp(n, lambda)`, where lambda is the rate parameter. The mean of exponential distribution and standard deviation is 1/lambda. Lambda is set at 0.2 for all simulations.
+
+### Sample exponential distribution
+```{r}
+set.seed(2021) # for reproducability
+nosim <- 1000 # no of simulations
+n <- 40 # no of exponentials
+lambda <- 0.2 # rate parameter 
+
+simdata <- matrix(rexp(nosim * n, rate=lambda), nosim)
+sim_mean <- rowMeans(simdata) # row means
+
+# calculate mean, sd and variance of sample exp dist
+simdata_mean <- mean(sim_mean)
+simdata_sd <- sd(sim_mean)
+simdata_var <- var(sim_mean)
+```
+
+With the no of simulations, no of exponentials, and the rate parameter, we can simulate the exponential distribution by multiplying the exponential by the no of simulations, giving us 1000 simulations of 40 exponentials. We put it in matrix form, and use the apply function to find the mean for each row. 
+
+With this, we can then find the sample mean, standard deviation and variance.
+
+### Theoretical exponential distribution
+```{r}
+# calculate mean, df and variance of theoretical exp dist
+t_mean = 1/lambda
+t_sd = (1/lambda) * (1/sqrt(n))
+t_var = t_sd^2
+```
+
+
+# Histogram of sample exponential distribution vs Averages of simulated exponentials.
+
+```{r plot 1, echo=FALSE}
+par(mfrow = c(1, 2))
+hist(simdata,
+     col = "steelblue",
+     main = "Simulated exponential distribution",
+     xlab = "40 random exponentials")
+hist(sim_mean,
+     col = "red3",
+     main = "Averages of Simulated Exponentials",
+     xlab = "Average of 40 exponentials")
+abline(v = t_mean, col = "green", lwd = 2) # theoretical mean
+```
+
+The blue histogram represents the simulated exponential distribution, as you can see most of the data is at the left side of the plot because of the properties of the exponential distribution.
+
+Observing the histogram for the averages of simulated exponentials, we can see it's following the form of a normal distribution. This will be further investigated later on in the report.
+
+The green line represents the theoretical mean of the distribution, and our simulated distribution is centered closely at the line.
+
+
+# Comparison between sample and theoretical statistics
+
+```{r Table 1, echo=FALSE}
+Sample_stats <- c(simdata_mean, simdata_sd, simdata_var)
+Theoretical_stats <- c(t_mean, t_sd, t_var)
+diff <-
+  c(abs(t_mean - simdata_mean),
+    abs(t_sd - simdata_sd),
+    t_var - simdata_var)
+names <- c("Mean", "Std", "Variance")
+data.frame(Sample_stats,
+           Theoretical_stats,
+           diff,
+           row.names =  c("Mean", "Std", "Variance"))
+```
+
+## Sample Mean versus Theoretical Mean
+
+Observing the table, the sample mean of the exponential distribution is centered at 5.008 whereas the theoretical mean, 1/lambda is 5
+
+The difference between the sample and theoretical mean is 0.0086
+
+
+## Sample Variance versus Theoretical Variance
+
+The sample Variance is is 0.621, which is very close to the theoretical variance, 0.625.
+
+The difference between them is 0.0037
+
+# Distribution
+
+## Histogram and Density plot
+
+```{r plot 2, echo=FALSE}
+library(ggplot2)
+simdata_mean <- data.frame(sim_mean)
+ggplot(simdata_mean, aes(sim_mean)) +
+    geom_histogram(
+        binwidth = .3,
+        fill = "steelblue",
+        color = "black",
+        aes(y = ..density..)
+    ) +
+    geom_density(color = "blue", lwd = 1) +
+    labs(title = "Distribution of Random Exponential Values with 1000 simulations",
+         x = "Average of 40 Exponentials", y = "Density") +
+    stat_function(
+        fun = dnorm,
+        args = list(mean = t_mean, sd = t_sd),
+        color = "red",
+        lwd = 1
+    ) +
+    theme_bw()
+
+```
+
+The red line is the theoretical normal distribution density, whereas the blue line is the density of the sample distribution. You can see that the sample distribution is approximately normal. 
+
+## Q-Q plot
+
+```{r plot 3, echo=FALSE}
+qqnorm(sim_mean, col="black") # sample distribution
+qqline(sim_mean, col="red", lwd=3) #theoretical
+```
+
+Observing the normal Q-Q plot, we can conclude that the sample distribution approximates the theoretical normal distribution quite closely, with the tails being less normal.
+
+--- 
+
+# Conclusion
+
+Based on the comparisons and the plots, the simulated sample distribution (as n grows larger) does indeed have similar means and variance with the theoretical distribution. This proves the Central Limit Theorem is in fact true.  
+
+An important condition for the central limit theorem is that the random variables are IID, which stands for Independent and Identically Distributed. These conditions are satisfied as we simulated the data using R.
+
+# Appendix
+
+R codes for table and plots
+
+### Plot 1
+
+```{r eval=FALSE, fig.keep = 'none'}
+par(mfrow = c(1, 2))
+hist(simdata,
+     col = "steelblue",
+     main = "Simulated exponential distribution",
+     xlab = "40 random exponentials")
+hist(sim_mean,
+     col = "red3",
+     main = "Averages of Simulated Exponentials",
+     xlab = "Average of 40 exponentials")
+abline(v = t_mean, col = "green", lwd = 2) # theoretical mean
+```
+
+
+### Table 
+
+```{r eval=FALSE}
+Sample_stats <- c(simdata_mean, simdata_sd, simdata_var)
+Theoretical_stats <- c(t_mean, t_sd, t_var)
+diff <-
+  c(abs(t_mean - simdata_mean),
+    abs(t_sd - simdata_sd),
+    t_var - simdata_var)
+names <- c("Mean", "Std", "Variance")
+data.frame(Sample_stats,
+           Theoretical_stats,
+           diff,
+           row.names =  c("Mean", "Std", "Variance"))
+```
+
+### Plot 2
+
+```{r eval=FALSE, fig.keep = 'none'}
+library(ggplot2)
+
+simdata_mean <- data.frame(sim_mean)
+ggplot(simdata_mean, aes(sim_mean)) +
+    geom_histogram(
+        binwidth = .3,
+        fill = "steelblue",
+        color = "black",
+        aes(y = ..density..)
+    ) +
+    geom_density(color = "blue", lwd = 1) +
+    labs(title = "Distribution of Random Exponential Values with 1000 simulations",
+         x = "Average of 40 Exponentials", y = "Density") +
+    stat_function(
+        fun = dnorm,
+        args = list(mean = t_mean, sd = t_sd),
+        color = "red",
+        lwd = 1
+    ) +
+    theme_bw()
+
+```
+
+
+### Plot 3 
+
+```{r eval=FALSE, fig.keep = 'none'}
+qqnorm(sim_mean, col="black") # sample distribution
+qqline(sim_mean, col="red", lwd=3) #theoretical
+```
+
+---
+
+# Software 
+
+```{r}
+sessionInfo()
+```
