@@ -120,11 +120,12 @@ There are great books by great authors related to R programming.
 * [Data Skills for Reproducible Science](https://psyteachr.github.io/msc-data-skills/)
 * [Statistical Inference via Data Science: A ModernDive into R and the tidyverse](https://moderndive.com)
 
-#### Statistics
+#### Statistic / Statistical Learning
+* [Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)
+* [R For Statistical Learning](https://daviddalpiaz.github.io/r4sl/)
 * [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
 
 #### Machine Learning
-* [Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)
 * [Machine Learning](https://m-clark.github.io/introduction-to-machine-learning/)
 * [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/)
 * [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
@@ -135,6 +136,7 @@ There are great books by great authors related to R programming.
 * [Mastering Shiny](https://mastering-shiny.org/index.html)
 * [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
 * [Text Mining with R](https://www.tidytextmining.com)
+* [blogdown](https://bookdown.org/yihui/blogdown/)
 
 ---
 
