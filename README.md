@@ -16,11 +16,11 @@ No | Course Name | Date Completed | Link to Repo
 3 | Getting and Cleaning Data | October 31, 2020 | [Link](3_Getting%26CleaningData)
 4 | Exploratory Data Analysis | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
 5 | Reproducible Research| November 19, 2020 | [Link](5_ReproducibleResearch)
-6 | Statistical Inference | 17th December | [Link](6_StatisticalInference)
-7 | Regression Model | Goal: 27th December | [Link](7_RegressionModel)
-8 | Practical Machine Learning | Goal: 10th January | 
-9 | Developing Data Products | Goal: 15th January | 
-10| Data Science Capstone | Goal: 31st January | 
+6 | Statistical Inference | 17th December, 2020 | [Link](6_StatisticalInference)
+7 | Regression Model | Goal: 27th December, 2020 | [Link](7_RegressionModel)
+8 | Practical Machine Learning | Goal: 10th January, 2021 | 
+9 | Developing Data Products | Goal: 15th January, 2021 | 
+10| Data Science Capstone | Goal: 31st January, 2021 | 
 
 ##  Projects
 
@@ -50,6 +50,7 @@ No | Course Name | Date Completed | Link to Repo
 * [Data Science Specialization Course Notes by Xing Su](http://sux13.github.io/DataScienceSpCourseNotes/)
 
 ### Blogs
+
 * [R bloggers](https://www.r-bloggers.com)
 * [Simply Statistics](https://simplystatistics.org)
 * [RStudio Blog](https://blog.rstudio.com)
