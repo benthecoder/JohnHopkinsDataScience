@@ -16,11 +16,11 @@ No | Course Name | Date Completed | Link to Repo
 3 | Getting and Cleaning Data | October 31, 2020 | [Link](3_Getting%26CleaningData)
 4 | Exploratory Data Analysis | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
 5 | Reproducible Research| November 19, 2020 | [Link](5_ReproducibleResearch)
-6 | Statistical Inference |  | [Link](6_StatisticalInference)
-7 | Regression Model |  | 
-8 | Practical Machine Learning |  | 
-9 | Developing Data Products |  | 
-10| Data Science Capstone |  | 
+6 | Statistical Inference | 17th December | [Link](6_StatisticalInference)
+7 | Regression Model | Goal: 27th December | [Link](7_RegressionModel)
+8 | Practical Machine Learning | Goal: 10th January | 
+9 | Developing Data Products | Goal: 15th January | 
+10| Data Science Capstone | Goal: 31st January | 
 
 ##  Projects
 
@@ -36,6 +36,9 @@ No | Course Name | Date Completed | Link to Repo
 * Reproducible Research
   - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) ([rpubs](https://rpubs.com/benthecoder/691112))
   - [Storm Analysis](5_ReproducibleResearch/knitr_project2) ([rpubs](https://rpubs.com/benthecoder/storm-data-analysis))
+* Statistical Inference
+  - [Sample vs Theoretical Exponential Distribution](6_StatisticalInference/project) ([rpubs](https://rpubs.com/benthecoder/expl-distributions)) ([pdf](https://tinyurl.com/pdf-part1-stats))
+  - [Basic Inference Analysis on ToothGrowth data](6_StatisticalInference/project) ([rpubs](https://rpubs.com/benthecoder/tooth-growth-inference)) ([pdf](https://tinyurl.com/pdf-part2-stats))
 
 ---
 
@@ -54,7 +57,7 @@ No | Course Name | Date Completed | Link to Repo
 * [Variance Explained](http://varianceexplained.org/posts/)
 * [Yihui's Blog](https://yihui.org/en/)
 * [Quick R by Data Camp](https://www.statmethods.net/index.html)
-* [data imaginist](https://www.data-imaginist.com)
+* [Data imaginist](https://www.data-imaginist.com)
 * [Probably Overthinking it](https://www.allendowney.com/blog/)
 
 ### Cheatsheets
@@ -79,13 +82,13 @@ No | Course Name | Date Completed | Link to Repo
 
 ### Twitter accounts
 
+* [RStudio](https://twitter.com/rstudio)
+* [RStudio Tips](https://twitter.com/rstudiotips)
+* [One R Tip a Day](https://twitter.com/RLangTip)
 * [Roger D. Peng](https://twitter.com/rdpeng)
 * [Hadley Wickham](https://twitter.com/hadleywickham)
 * [Mine Çetinkaya-Rundel](https://twitter.com/minebocek)
 * [Thomas Lin Pedersen](https://twitter.com/thomasp85)
-* [RStudio](https://twitter.com/rstudio)
-* [RStudio Tips](https://twitter.com/rstudiotips)
-* [One R Tip a Day](https://twitter.com/RLangTip)
 * [Nathan Yao](https://twitter.com/flowingdata)
 
 ### Podcasts
