@@ -3,7 +3,7 @@ Before you can work with data you have to get some. This course will cover the b
 
 ## Articles 
 
-Articles are coming!
+* [What is Tidy Data?](https://towardsdatascience.com/what-is-tidy-data-d58bb9ad2458)
 
 ## What I've learned
 The first half of the course was all about reading in different kinds of data sources and understanding the data storage systems, which can be helpful when one deals with data in real-life. The second half was centered on cleaning data (Manipulating > Grouping and Chaning > Tidying with the dplyr package). The last week taught about using the lubridate package to work with dates and times and regex. The final assignment for this course was incredibly helpful to me, as it gave me an idea of what it's like to work with large data and clean it, albeit difficult and frustrating, it gave me valuable lessons.
