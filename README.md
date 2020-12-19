@@ -40,6 +40,10 @@ No | Course Name | Date Completed | Link to Repo
   - [Sample vs Theoretical Exponential Distribution](6_StatisticalInference/project) ([rpubs](https://rpubs.com/benthecoder/expl-distributions)) ([pdf](https://tinyurl.com/pdf-part1-stats))
   - [Basic Inference Analysis on ToothGrowth data](6_StatisticalInference/project) ([rpubs](https://rpubs.com/benthecoder/tooth-growth-inference)) ([pdf](https://tinyurl.com/pdf-part2-stats))
 
+## Articles checklist
+
+[Link](article_list.md)
+
 ---
 
 ## Resources 
