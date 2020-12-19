@@ -21,7 +21,3 @@ This course is complemented with the book below
 * [Regression Models for Data Science in R](https://leanpub.com/regmods/read)
 
 ## Proof of completion
-
-![Certificate for fifth course](cert5.png) 
-
-[View it online](https://coursera.org/share/82097f1d7caeadd28b22d2a7c79724ba)
