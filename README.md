@@ -77,6 +77,7 @@ No | Course Name | Date Completed | Link to Repo
 * [mit stats](https://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf)
 * [harvard stats](https://tinyurl.com/harvard-stats)
 * [stanford](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics)
+* [Quick-R](https://www.statmethods.net)
 
 ### Fun Projects
 * [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
@@ -105,6 +106,7 @@ There are great books by great authors related to R programming.
 * [Exploratory Data Analysis with R](https://bookdown.org/rdpeng/exdata/)
 * [Report Writing for Data Science in R](https://leanpub.com/reportwriting)
 * [Statistical Inference for Data Science](https://leanpub.com/LittleInferenceBook/read)
+* [Regression models for Data Science in R](https://leanpub.com/regmods/read)
 
 #### Beginner
 * [An Introduction to R](https://intro2r.com)
@@ -122,10 +124,11 @@ There are great books by great authors related to R programming.
 * [Data Science Live Book](https://livebook.datascienceheroes.com)
 * [Practical Data Science with R](http://1.droppdf.com/files/EyDuc/manning-practical-data-science-with-r-2014.pdf)
 * [Data Skills for Reproducible Science](https://psyteachr.github.io/msc-data-skills/)
-* [Statistical Inference via Data Science: A ModernDive into R and the tidyverse](https://moderndive.com)
+* [Advanced Data Science 2020](http://jtleek.com/ads2020/)
 
 #### Statistic / Statistical Learning
 * [Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)
+* [Statistical Inference via Data Science: A ModernDive into R and the tidyverse](https://moderndive.com)
 * [R For Statistical Learning](https://daviddalpiaz.github.io/r4sl/)
 * [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
 
