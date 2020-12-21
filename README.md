@@ -25,24 +25,25 @@ No | Course Name | Date Completed | Link to Repo
 ##  Projects
 
 * R Programming
-  - [Air Pollution](2_Rprogramming/Air_pollution) 
+  - [Air Pollution](2_Rprogramming/Air_pollution) ([html](2_Rprogramming/Air_pollution/AirPollution.html)) ([rpubs](https://rpubs.com/benthecoder/specdata)) 
   - [Cache Matrix](2_Rprogramming/cache-matrix)
-  - [Hospital Ranking](2_Rprogramming/hospital_ranking)
+  - [Hospital Ranking](2_Rprogramming/hospital_ranking) ([html](2_Rprogramming/hospital_ranking/hospital_ranking.html)) ([rpubs](https://rpubs.com/benthecoder/hospital-ranking)) 
 * Getting and Cleaning Data
   - [Tidy Data](3_Getting%26CleaningData/tidy_data)
 * Exploratory Data Analysis
   - [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/)
   - [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/)
 * Reproducible Research
-  - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) ([rpubs](https://rpubs.com/benthecoder/691112))
-  - [Storm Analysis](5_ReproducibleResearch/knitr_project2) ([rpubs](https://rpubs.com/benthecoder/storm-data-analysis))
+  - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) ([html](5_ReproducibleResearch/knitr_project1/PA1_template.html)) ([rpubs](https://rpubs.com/benthecoder/691112))
+  - [Storm Analysis](5_ReproducibleResearch/knitr_project2) ([html](5_ReproducibleResearch/knitr_project2/stormAnalysis.html)) ([rpubs](https://rpubs.com/benthecoder/storm-data-analysis))
 * Statistical Inference
-  - [Sample vs Theoretical Exponential Distribution](6_StatisticalInference/project) ([rpubs](https://rpubs.com/benthecoder/expl-distributions)) ([pdf](https://tinyurl.com/pdf-part1-stats))
-  - [Basic Inference Analysis on ToothGrowth data](6_StatisticalInference/project) ([rpubs](https://rpubs.com/benthecoder/tooth-growth-inference)) ([pdf](https://tinyurl.com/pdf-part2-stats))
+  - [Sample vs Theoretical Exponential Distribution](6_StatisticalInference/project) ([html](6_StatisticalInference/project/part_1/Part_1.html)) ([rpubs](https://rpubs.com/benthecoder/expl-distributions)) 
+  - [Basic Inference Analysis on ToothGrowth data](6_StatisticalInference/project) ([html](6_StatisticalInference/project/part_2/Part_2.html)) ([rpubs](https://rpubs.com/benthecoder/tooth-growth-inference)) 
+
 
 ## Articles checklist
 
-[Link](article_list.md)
+* [Link](article_list.md)
 
 ---
 
