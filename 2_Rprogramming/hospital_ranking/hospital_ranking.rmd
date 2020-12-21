@@ -1,0 +1,233 @@
+---
+title: Hospital Ranking with R functions
+author: Benedict Neo
+output: 
+  html_document: 
+    toc: yes
+---
+
+## Assignment Instructions
+
+The data for this assignment come from the Hospital Compare web site (http://hospitalcompare.hhs.gov) run by the U.S. Department of Health and Human Services. The purpose of the web site is to provide data and information about the quality of care at over 4,000 Medicare-certified hospitals in the U.S. This dataset es- sentially covers all major U.S. hospitals. This dataset is used for a variety of purposes, including determining whether hospitals should be fined for not providing high quality care to patients (see http://goo.gl/jAXFX for some background on this particular topic).
+
+The Hospital Compare web site contains a lot of data and we will only look at a small subset for this assignment. The zip file for this assignment contains three files
+
+* outcome-of-care-measures.csv: Contains information about 30-day mortality and readmission rates for heart attacks, heart failure, and pneumonia for over 4,000 hospitals.
+* hospital-data.csv: Contains information about each hospital.
+* Hospital_Revised_Flatfiles.pdf: Descriptions of the variables in each file (i.e the code book).
+
+A description of the variables in each of the files is in the included PDF file named Hospital_Revised_Flatfiles.pdf. This document contains information about many other files that are not included with this programming assignment. You will want to focus on the variables for Number 19 (“Outcome of Care Measures.csv”) and Number 11 (“Hospital Data.csv”). You may find it useful to print out this document (at least the pages for Tables 19 and 11) to have next to you while you work on this assignment. In particular, the numbers of the variables for each table indicate column indices in each table (i.e. “Hospital Name” is column 2 in the outcome-of-care-measures.csv file)
+
+More information about the assignment [here](Hospital_Revised_Flatfiles.pdf)
+
+Data zip file - [link](https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2FProgAssignment3-data.zip) 
+
+## Loading Packages
+```{r packages, warning=FALSE, message=FALSE}
+library(data.table)
+library(dplyr)
+library(ggplot2)
+library(janitor)
+```
+
+## 1. Plot the 30-day mortality rates for heart attack 
+```{r outcome}
+# reading data
+outcome <- data.table::fread("data/outcome-of-care-measures.csv", colClasses = "character")
+
+# preprocessing data for histogram
+histogram_data <- outcome %>% 
+    rename(death_rate_30_HA = 11) %>%
+    mutate(death_rate_30_HA = suppressWarnings(as.numeric(death_rate_30_HA))) %>%
+    select(death_rate_30_HA) %>%
+    unlist()
+
+# plot histogram
+hist(histogram_data, 
+	main = "Hospital 30-day Death (Mortality) Rates from Heart Attacks",
+    xlab = "Deaths", 
+    col = "red")
+```
+
+
+## 2. Finding the best hospital in a state
+
+Write a function called best that take two arguments: the 2-character abbreviated name of a state and an outcome name. The function reads the outcome-of-care-measures.csv file and returns a character vector with the name of the hospital that has the best (i.e. lowest) 30-day mortality for the specified outcome in that state. The hospital name is the name provided in the Hospital.Name variable. The outcomes can be one of “heart attack”, “heart failure”, or “pneumonia”. Hospitals that do not have data on a particular outcome should be excluded from the set of hospitals when deciding the rankings.
+
+```{r}
+best <- function(state, outcome) {
+    # Read outcome data
+    dt <- data.table::fread("data/outcome-of-care-measures.csv")
+    
+    # change outcome to lowercase
+    outcome <- tolower(outcome)
+    
+    # change variable name to prevent confusion
+    chosen_state <- state
+
+    # Check state and outcome are valid, if not return warning message
+    if (!chosen_state %in% unique(dt[["State"]])) {
+        stop("Invalid state")
+    }
+    
+    if (!outcome %in% c("heart attack", "heart failure", "pneumonia")) {
+        stop("Invalid outcome")
+    }
+
+    dt <- dt %>% 
+        rename_with(~ tolower(gsub("^Hospital 30-Day Death \\(Mortality\\) Rates from ", "", .x))) %>%
+        filter(state == chosen_state) %>%
+        mutate(rate = suppressWarnings(as.numeric(get(outcome)))) %>%
+        clean_names() %>%
+        select(hospital_name, state, rate) %>%
+        filter(complete.cases(.)) %>%
+        arrange(rate, hospital_name) %>%
+        mutate(rank = row_number())  
+    
+    unlist(dt[1,1])
+}
+```
+
+### Sample outputs
+```{r}
+best("TX", "heart attack")
+```
+
+
+```{r}
+best("MD", "pneumonia")
+```
+
+
+## 3. Ranking hospitals by outcome in a state 
+
+Write a function called rankhospital that takes three arguments: the 2-character abbreviated name of a state (state), an outcome (outcome), and the ranking of a hospital in that state for that outcome (num). The function reads the outcome-of-care-measures.csv file and returns a character vector with the name of the hospital that has the ranking specified by the num argument. For example, the call rankhospital(“MD”, “heart failure”, 5) would return a character vector containing the name of the hospital with the 5th lowest 30-day death rate for heart failure. The num argument can take values “best”, “worst”, or an integer indicating the ranking (smaller numbers are better). If the number given by num is larger than the number of hospitals in that state, then the function should return NA. Hospitals that do not have data on a particular outcome should be excluded from the set of hospitals when deciding the rankings.
+
+```{r}
+rankHospital <- function(state, outcome, num="best") {
+    # Read outcome data
+    dt <- data.table::fread("data/outcome-of-care-measures.csv")
+    
+    # change outcome to lowercase
+    outcome <- tolower(outcome)
+    
+    # change variable name to prevent confusion
+    chosen_state <- state
+
+    # Check state and outcome are valid, if not return warning message
+    if (!chosen_state %in% unique(dt[["State"]])) {
+        stop("Invalid state")
+    }
+    if (!outcome %in% c("heart attack", "heart failure", "pneumonia")) {
+        stop("Invalid outcome")
+    }
+    
+    dt <- dt %>% 
+        rename_with(~ tolower(gsub("^Hospital 30-Day Death \\(Mortality\\) Rates from ", "", .x))) %>%
+        filter(state == chosen_state) %>%
+        mutate(rate = suppressWarnings(as.numeric(get(outcome)))) %>%
+        clean_names() %>%
+        select(hospital_name, state, rate) %>%
+        filter(complete.cases(.)) %>%
+        arrange(rate, hospital_name) %>%
+        mutate(rank = row_number())  
+
+    if (num == "best") {
+        unlist(head(dt[[1]], 1))
+    }
+    
+    else if (num == "worst") {
+        unlist(tail(dt[[1]], 1))
+    }
+    
+    else {
+        dt %>% 
+            slice(num) %>%
+            select(hospital_name) %>%
+            unlist()
+    }
+}
+```
+
+### Sample outputs
+```{r}
+rankHospital("TX", "heart failure", "best")
+```
+
+```{r}
+rankHospital("MD", "heart attack", "worst")
+```
+
+```{r}
+rankHospital("MN", "heart attack", 5000) 
+```
+
+## 4. Ranking hospitals in all states
+
+Write a function called rankall that takes two arguments: an outcome name (outcome) and a hospital ranking (num). The function reads the outcome-of-care-measures.csv file and returns a 2-column data frame containing the hospital in each state that has the ranking specified in num. For example the function call rankall(“heart attack”, “best”) would return a data frame containing the names of the hospitals that are the best in their respective states for 30-day heart attack death rates. The function should return a value for every state (some may be NA). The first column in the data frame is named hospital, which contains the hospital name, and the second column is named state, which contains the 2-character abbreviation for the state name. Hospitals that do not have data on a particular outcome should be excluded from the set of hospitals when deciding the rankings.
+
+```{r}
+rankAll <- function(outcome, num = "best") {
+    # Read outcome data
+    dt <- data.table::fread("data/outcome-of-care-measures.csv")
+    
+    # change outcome to lowercase
+    outcome <- tolower(outcome)
+    
+    # check if outcome is valid
+    if (!outcome %in% c("heart attack", "heart failure", "pneumonia")) {
+        stop('invalid outcome')
+    }
+    
+    dt <- dt %>% 
+        rename_with(~ tolower(gsub("^Hospital 30-Day Death \\(Mortality\\) Rates from ", "", .x))) %>%
+        mutate(rate = suppressWarnings(as.numeric(get(outcome)))) %>%
+        clean_names() %>%
+        select(hospital_name, state, rate) %>%
+        filter(complete.cases(.)) %>%
+        group_by(state) %>%
+        arrange(rate, hospital_name, .by_groups=TRUE) %>% 
+        arrange(state) %>%
+        mutate(rank = row_number()) 
+    
+    if (num == "best") {
+        dt %>% 
+            filter(rank == 1) %>%
+            select(hospital_name, state)
+    }
+    
+    else if (num == "worst") {
+        dt %>%
+            group_by(state) %>%
+            filter(rank == max(rank)) %>%
+            select(hospital_name, state)
+    }
+    
+    else {
+        dt %>%
+            group_by(state) %>%
+            filter(rank == num) %>%
+            select(hospital_name, state)
+    }
+}
+```
+
+
+### Sample outputs
+```{r}
+head(rankAll("heart attack", 20), 5)
+```
+
+```{r}
+tail(rankAll("pneumonia", "worst"), 3)
+```
+
+```{r}
+tail(rankAll("heart failure"), 10)
+```
+
+## Session info
+```{r}
+sessionInfo()
+```
+

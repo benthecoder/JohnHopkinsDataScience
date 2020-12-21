@@ -4,11 +4,16 @@ corr <- function(directory, threshold=0) {
     lst <- lapply(file.path(directory, list.files(path=directory, pattern=".csv")), data.table::fread)
     
     # bind all files by rows
-    dt <- rbindlist(lst)
+    dt <- lst %>%
+        rbindlist()
     
-    # filtering out data tables with na values
-    dt <- dt[complete.cases(dt)]
-    
-    dt <- dt[, .(nobs=.N, corr=cor(x=sulfate, y=nitrate)), by=ID][nobs > threshold]
-    return(dt[,corr])
+    dt %>%
+        filter(complete.cases(dt)) %>% 
+        group_by(ID) %>%
+        mutate(nobs=n()) %>%
+        filter(nobs > threshold) %>%
+        summarise(corr = cor(x=sulfate, y=nitrate), .groups="drop") %>%
+        select(corr) %>%
+        as.matrix() %>%
+        c()
 }
