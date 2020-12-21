@@ -83,6 +83,7 @@ No | Course Name | Date Completed | Link to Repo
 * [harvard stats](https://tinyurl.com/harvard-stats)
 * [stanford](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics)
 * [Quick-R](https://www.statmethods.net)
+* [Elementary Statistics with R](http://www.r-tutor.com/elementary-statistics)
 
 ### Fun Projects
 * [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
