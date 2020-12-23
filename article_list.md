@@ -22,6 +22,7 @@
 - [ ] TidyR functions
 - [ ] dplyr 
 - [ ] Lubridate in R
+- [ ] Data Reshaping in R
 
 ## EDA
 - [x] [The 6 Principles of Effective Data Visualization](https://medium.com/better-programming/the-6-principles-of-effective-data-visualization-9f98d1f7dade)
