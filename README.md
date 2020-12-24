@@ -11,15 +11,15 @@ This Data Science specialization contains 10 courses and the first five courses 
 
 No | Course Name | Date Completed | Link to Repo 
 :---: |:---:  | :---: | :---: 
-1 | The Data Scientist's Toolbox  | August 29, 2020 | [Link](1_DataScienceToolbox)
-2 | R Programming |  October 19, 2020 | [Link](2_Rprogramming)
-3 | Getting and Cleaning Data | October 31, 2020 | [Link](3_Getting%26CleaningData)
-4 | Exploratory Data Analysis | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
-5 | Reproducible Research| November 19, 2020 | [Link](5_ReproducibleResearch)
-6 | Statistical Inference | 17th December, 2020 | [Link](6_StatisticalInference)
-7 | Regression Model | Goal: 27th December, 2020 | [Link](7_RegressionModel)
-8 | Practical Machine Learning | Goal: 10th January, 2021 | 
-9 | Developing Data Products | Goal: 15th January, 2021 | 
+1 | [The Data Scientist's Toolbox](Notes/c1/c1.html)  | August 29, 2020 | [Link](1_DataScienceToolbox)
+2 | [R Programming](Notes/c2/c2.html) |  October 19, 2020 | [Link](2_Rprogramming)
+3 | [Getting and Cleaning Data](Notes/c3/c3.html) | October 31, 2020 | [Link](3_Getting%26CleaningData)
+4 | [Exploratory Data Analysis](Notes/c4/c4.html) | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
+5 | [Reproducible Research](Notes/c5/c5.html)| November 19, 2020 | [Link](5_ReproducibleResearch)
+6 | [Statistical Inference](Notes/c6/c6.html) | 17th December, 2020 | [Link](6_StatisticalInference)
+7 | [Regression Model](Notes/c7/c7.html) | Goal: 27th December, 2020 | [Link](7_RegressionModel)
+8 | [Practical Machine Learning](Notes/c8/c8.html) | Goal: 10th January, 2021 | 
+9 | [Developing Data Products](Notes/c9/c9.html) | Goal: 15th January, 2021 | 
 10| Data Science Capstone | Goal: 31st January, 2021 | 
 
 ##  Projects
