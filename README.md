@@ -133,7 +133,7 @@ There are great books by great authors related to R programming.
 * [Advanced Data Science 2020](http://jtleek.com/ads2020/)
 
 #### Statistic / Statistical Learning
-* [Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)
+* [Introduction to Statistical Learning](https://statlearning.com)
 * [Statistical Inference via Data Science: A ModernDive into R and the tidyverse](https://moderndive.com)
 * [R For Statistical Learning](https://daviddalpiaz.github.io/r4sl/)
 * [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
