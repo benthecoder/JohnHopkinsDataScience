@@ -143,6 +143,7 @@ There are great books by great authors related to R programming.
 * [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/)
 * [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
 * [Advanced Statistical Computing](https://bookdown.org/rdpeng/advstatcomp/)
+* [Tidy Modeling with R](https://www.tmwr.org)
 
 #### Supplementary 
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
