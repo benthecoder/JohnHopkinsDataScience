@@ -19,5 +19,6 @@ Articles are coming!
 This course is complemented with the book below
 
 * [Regression Models for Data Science in R](https://leanpub.com/regmods/read)
+* [code for book](https://github.com/gnsljw/Coursera-Data-Science-Brian-Caffo/tree/master/07_RegressionModels)
 
 ## Proof of completion
