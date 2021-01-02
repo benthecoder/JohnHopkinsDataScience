@@ -65,6 +65,7 @@ No | Course Name | Date Completed | Link to Repo
 * [Quick R by Data Camp](https://www.statmethods.net/index.html)
 * [Data imaginist](https://www.data-imaginist.com)
 * [Probably Overthinking it](https://www.allendowney.com/blog/)
+* [Julia Silge](https://juliasilge.com/blog/)
 
 ### Cheatsheets
 
