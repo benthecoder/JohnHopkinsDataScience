@@ -51,3 +51,6 @@
 - [ ] power
 - [ ] Multiple Testing
 - [ ] bootstrap and resampling
+
+## Regression models
+- [ ] Influence measures (dffits, dfbetas, rstudent, rstandard, Cook's distance)

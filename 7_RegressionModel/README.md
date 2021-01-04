@@ -14,6 +14,16 @@ Articles are coming!
 
 ## What I've learned
 
+* dffits - change in predicted response when ith point deleted
+* dfbetas - change in coefficeints when ith point deleted
+* hatvalues - measures of leverage
+* r standard - residuals / sd
+* r student - standardized, but with ith data point deleted
+* Cook's distance - overall change in coefficient when ith point deleted
+* VIF - increase in variance of a coef ifdue to it's correlation with other regressors
+* anova
+* f statistics - ratio of SS divided by rdf. If the two scaled sums are independent and centrally chi-squared distributed with the same variance, the statistic will have an F distribution with parameters given by the two degrees of freedom.
+* Shapiro-Wilk test - test residuals for normality
 
 ## Kaggle notebooks
 * [Week 1](https://www.kaggle.com/benthecoder/regression-models-in-r-week-1-coursera)
