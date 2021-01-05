@@ -55,6 +55,9 @@ No | Course Name | Date Completed | Link to Repo
 * [DS Specialization github io](http://datasciencespecialization.github.io)
 * [Data Science Specialization Course Notes by Xing Su](http://sux13.github.io/DataScienceSpCourseNotes/)
 
+### College Classes
+* [Stats191 Intro to Applied Stats, Harvard](https://web.stanford.edu/class/stats191/#)
+
 ### Blogs
 
 * [R bloggers](https://www.r-bloggers.com)
