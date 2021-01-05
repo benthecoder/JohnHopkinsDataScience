@@ -39,7 +39,8 @@ No | Course Name | Date Completed | Link to Repo
 * Statistical Inference
   - [Sample vs Theoretical Exponential Distribution](6_StatisticalInference/project) ([html](6_StatisticalInference/project/part_1/Part_1.html)) ([rpubs](https://rpubs.com/benthecoder/expl-distributions)) 
   - [Basic Inference Analysis on ToothGrowth data](6_StatisticalInference/project) ([html](6_StatisticalInference/project/part_2/Part_2.html)) ([rpubs](https://rpubs.com/benthecoder/tooth-growth-inference)) 
-
+* Regression Models
+ - [Analysis of College Major by Income](https://www.kaggle.com/benthecoder/analysis-of-college-major-by-income-with-r)
 
 ## Articles checklist
 
