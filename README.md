@@ -135,6 +135,7 @@ There are great books by great authors related to R programming.
 * [Data Science Live Book](https://livebook.datascienceheroes.com)
 * [Practical Data Science with R](http://1.droppdf.com/files/EyDuc/manning-practical-data-science-with-r-2014.pdf)
 * [Data Skills for Reproducible Science](https://psyteachr.github.io/msc-data-skills/)
+* [Tidyverse Skills for Data Science](https://jhudatascience.org/tidyversecourse/)
 * [Advanced Data Science 2020](http://jtleek.com/ads2020/)
 
 #### Statistic / Statistical Learning
