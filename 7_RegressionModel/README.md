@@ -26,10 +26,18 @@ Articles are coming!
 * Shapiro-Wilk test - test residuals for normality
 
 ## Kaggle notebooks
+
+### Notes
 * [Week 1](https://www.kaggle.com/benthecoder/regression-models-in-r-week-1-coursera)
 * [Week 2](https://www.kaggle.com/benthecoder/regression-models-in-r-week-2-coursera)
 * [Week 3](https://www.kaggle.com/benthecoder/regression-models-in-r-week-3-coursera)
 * [Week 4](https://www.kaggle.com/benthecoder/regression-models-in-r-week-4-coursera)
+
+### quiz
+* [Week 1](https://www.kaggle.com/benthecoder/regression-models-in-r-week-1-quiz)
+* [Week 2](https://www.kaggle.com/benthecoder/regression-models-in-r-week-2-quiz)
+* [Week 3](https://www.kaggle.com/benthecoder/regression-models-in-r-week-3-quiz)
+* [Week 4](https://www.kaggle.com/benthecoder/regression-models-in-r-week-4-quiz)
 
 ## Book
 This course is complemented with the book below
