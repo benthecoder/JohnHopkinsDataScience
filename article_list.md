@@ -54,3 +54,19 @@
 
 ## Regression models
 - [ ] Influence measures (dffits, dfbetas, rstudent, rstandard, Cook's distance)
+- [ ] What is regression
+- [ ] Stats learning vs machine learning
+- [ ] interpreting regression coefficients
+- [ ] residuals
+- [ ] regression inference
+- [ ] multivariate regression
+- [ ] Model selection
+- [ ] GLMs
+- [ ] What are link functions
+- [ ] Logistic regression
+- [ ] Poisson regression
+
+## Practical Machine Learning
+
+## Developing Data Products
+
