@@ -33,8 +33,8 @@ Illustrate via simulation and associated explanatory text the properties of the 
 This exercise is asking you to use your knowledge of the theory given in class to relate the two distributions.
 
 
-View my work on [rpubs](https://rpubs.com/benthecoder/expl-distributions) 
-View it on [pdf](https://tinyurl.com/stats-inf-part1)
+* View my work on [rpubs](https://rpubs.com/benthecoder/expl-distributions) 
+* View it on [pdf](https://tinyurl.com/stats-inf-part1)
 
 ---
 
@@ -46,8 +46,8 @@ Now in the second portion of the project, we're going to analyze the ToothGrowth
 * Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from class, even if there's other approaches worth considering)
 * State your conclusions and the assumptions needed for your conclusions.
 
-View my work on [rpubs](https://rpubs.com/benthecoder/tooth-growth-inference) 
-View it on [pdf](https://tinyurl.com/stats-inf-part2)
+* View my work on [rpubs](https://rpubs.com/benthecoder/tooth-growth-inference) 
+* View it on [pdf](https://tinyurl.com/stats-inf-part2)
 
 
 
