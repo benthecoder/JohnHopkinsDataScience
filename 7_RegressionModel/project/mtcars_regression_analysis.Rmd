@@ -1,0 +1,285 @@
+---
+title: "Motor Trend Data Regression Analysis"
+author: "Benedict Neo"
+date: January 11, 2021
+geometry: "left=1cm,right=1cm,top=2cm,bottom=2cm"
+output:
+  html_document:
+    toc: true
+    fig_caption: true
+  pdf_document: default
+---
+
+## Executive Summary
+This analysis was done for Motor Trend, a magazine about the automobile industry. The task was to look at the mtcars data set of a collection of cars. They are interested in exploring the relationship between a set of variables and miles per gallon (MPG) (outcome). 
+
+They are particularly interested in the following two questions:
+
+* “Is an automatic or manual transmission better for MPG”
+* "Quantify the MPG difference between automatic and manual transmissions"  
+
+After concluding the analysis, the following points can be made:  
+
+* Manual transmission y for MPG, based on the evidence from the box plot, as well as the simple linear regression model.
+* With a 95% confidence interval, we estimate the true difference between automatic and manual cars to be between 3.2 and 11.3 
+* Our simple linear model with transmission type as predictor shows us that  the manual transmission cars have 7.24 (+/- 3.60) MPG more in fuel efficiency than automatic cars.
+* As for a multivariate linear regression model, using a stepwise selection method, we found that the predictor variables `wt`, `qsec` and `am` best predict mpg, explaining roughly 85% of it's variation. This model was further tested with anova, the variance inflation factor, along with residual diagnostic plots.
+* This multivariate regression model tells us that, while adjusting for the other predictor variables `wt` and `qsec`, manual transmission cars on average have 2.94 MPG (+/- 2.89) more in fuel efficiency than automatic cars.
+
+```{r global-options, include=FALSE}
+knitr::opts_chunk$set(
+    fig.width = 8,
+    fig.height = 6,
+    fig.path = 'Figs/',
+    echo = TRUE,
+    warning = FALSE,
+    message = FALSE
+)
+
+options(knitr.table.format = "html") 
+```
+
+## Importing libraries
+```{r libraries}
+library(GGally)
+library(dplyr)
+library(ggplot2)
+library(car)
+library(broom)
+library(printr)
+library(pander)
+library(kableExtra)
+
+theme_set(theme_classic())
+```
+
+## Exploratory Data Analysis
+
+To know more about the data, you can look at the appendix section with title "About the data". 
+```{r head}
+head(mtcars) %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+Since `vs` and `am` are factor variables, we'll be factorizing them to get more interpretable outputs in regression.
+
+```{r mutate}
+# factoring categorical variables for regression
+mtcars <- mtcars %>%
+    mutate(am = factor(am, labels = c("automatic", "manual"))) %>%
+    mutate(vs = factor(vs))
+```
+
+The question focuses on the am variable, which is transmission type - automatic or manual. To answer the question, we can plot a box plot to see the difference between automatic and manual. 
+
+Based on the box plot in the appendix, we can form a hypothesis that the manual cars have higher miles per gallon, which means it has higher fuel efficiency as compared to automatic cars. o test for this claim, we can use a statistical test such as the t test. 
+
+### Two samples t test
+
+```{r t_test}
+panderOptions('table.split.table', '50')
+pander(t.test(mtcars$mpg ~ mtcars$am))
+```
+
+From the t test, we get a significant p-value, this means we can reject the null that there is no difference between auto and manual cars. In other words, the probability that the difference in these two groups appeared by chance is very low. Observing the confidence interval, we are 95% confident that the true difference between automatic and manual cars are between 3.2 and 11.3. 
+
+Since we'll be fitting regression models on this data, it's useful to look pairwise scatter plots as this gives us a quick look into the relationship between variables. This plot can be observed at the appendix.
+
+
+## Regression Model and Hypothesis testing
+
+### Simple Linear Regression Model
+
+Since Motor Trends is more interested in the am variable, we'll be fitting it to the model and observe the results. 
+
+```{r simple_lm}
+fit_am <- lm(mpg ~ am, mtcars)
+summary(fit_am) 
+```
+The reference variable follows an alphabetical order, so interpreting the coefficients, note that the reference variable in this case is automatic transmission.  
+
+* The `intercept` here shows us that 17.15 is mean mpg for automatic transmission. 
+* The `slope` coefficient shows us that 7.24 is the change in mean between the automatic and manual transmission (this can be observed from the box plot previously)
+* The `p-value` for the slope coefficient tells us that the mean difference between auto and manual transmission is significant, and thus we can conclude that manual transmission is more fuel efficient as compared to automatic.
+* The r squared for our model is low, with only 36% of variation explained by the model. This makes sense because models with only one variable usually isn't enough. 
+
+Simple linear regression is usually insufficient in terms of creating a good model that can predict mpg because there are other predictor variables or regressors that can help explain more variation in the model. Thus, this is where multivariate linear regression can help us fit more variables to produce a better model.
+
+### Multivariate Linear Regression Model
+
+The goal is to create a model that best predicts mpg, or ultimately fuel efficiency. This means that each of the predictors variables should have a statistically significant p-value and are not correlated in any way (this will be tested with the Variance Inflation factor later on). Model fit can also be tested with anova, where you can observe whether adding a variable explains away a significant portion of variation (or looking at the p-value).
+
+The challenge with Multivariate regression is which variables you should include or remove. Here we see what happens if we include all the variables in the data.
+
+```{r full_model}
+full.model <- lm(mpg ~ ., data = mtcars)
+summary(full.model) 
+```
+
+You can see that almost all (besides wt) the variables have p-values that are not significant
+
+An issue with multivariate regression is certain variables may be correlated with each other, which can increase the standard error of other variables. To assess colinearity, we can use the Variance inflation factor, which r has a nifty function (vif) that does so.
+
+```{r vif_full}
+rbind(vif(full.model))  %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+We see some of the variables have really high VIF (more than 10) which shows signs of colinearity.
+
+### Stepwise regression model
+
+There are many ways to test for different variables to choose the best model, here I will be using the stepwise selection method to help find the predictor variables that can best explain MPG. 
+
+```{r best_model}
+bestModel <- step(full.model, direction = "both",
+                  trace = FALSE)
+summary(bestModel)
+```
+
+Using the stepwise method, we end up with 3 predictor variables, `wt`, `qsec` and `am`.   
+
+* all three variables have significant p-values, which suggest that they are all important addition to the model for predicting mpg.
+* note that our am variable has a less significant p-value after adjusting for variabes `wt` and `qsec`
+* after adjusting for other predictor variables, our coefficient for am went down to 2.94, and our pvalue became less significant. 
+* The r squared value denotes how much of the variation in mpg is explained. Our best model explains around 84% of the variation, which indicates it's a good model.
+
+
+## Regression diagnostics
+
+```{r vif_best}
+vif <- cbind(vif(bestModel))
+colnames(vif) <- "VIF of bestmodel"
+vif  %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = F)
+```
+The variance inflation factor of all three of our variables are small, which means they are not highly correlated.
+
+### Anova test on nested models
+
+Anova is a useful statistical tool to use on nested models. With it, we can interpret what the effects of adding a new variable are on the coefficients and the p-values
+
+```{r anova}
+fit0 <- lm(mpg ~ am, mtcars)
+fit1 <- update(fit0, mpg ~ am + wt)
+fit2 <- update(fit1, mpg ~ am + wt + qsec)
+fit3 <- update(fit2, mpg ~ am + wt + qsec + disp)
+fit4 <- update(fit3, mpg ~ am + wt + qsec + disp + hp)
+
+anova(fit0, fit1, fit2, fit3, fit4)  %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+
+Looking at the results, we see how our best fit gives us a significant result (consistent with our stepwise selection model), but adding the variables `disp` and `hp` gives us p-values that are not significant, thus a worse model.
+
+### Residual diganostic plots
+To diagnose a regression model it's also important to look at the residual diagnostics, which can be seen at the appendix.   
+
+* From our residual vs fitted plot, we don't see any distinct patterns, which is a good sign
+* Our normal Q-Q plot shows that our standardized residuals are considerably normal, and doesn't deviate that much from the line.
+* scale-location is compares standardized residuals with fitted values, and we don't see any patterns as well
+* Our residual vs leverage plot don't contain any systematic patterns. 
+
+\pagebreak
+## Appendix
+
+### Code
+```{r libraries code, ref.label="libraries", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="head", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="mutate", echo = TRUE, eval = FALSE}  
+
+```
+
+```{r, ref.label="t_test", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="simple_lm", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="full_model", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="vif_full", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="best_model", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="best_r2", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="vif_best", echo = TRUE, eval = FALSE}  
+
+``` 
+
+```{r, ref.label="anova", echo = TRUE, eval = FALSE}  
+
+``` 
+
+\pagebreak
+
+### About the data
+
+```
+A data frame with 32 observations on 11 (numeric) variables.
+
+[, 1]	mpg	    Miles/(US) gallon
+[, 2]	cyl	    Number of cylinders
+[, 3]	disp	Displacement (cu.in.)
+[, 4]	hp	    Gross horsepower
+[, 5]	drat	Rear axle ratio
+[, 6]	wt	    Weight (1000 lbs)
+[, 7]	qsec	1/4 mile time
+[, 8]	vs	    Engine (0 = V-shaped, 1 = straight)
+[, 9]	am	    Transmission (0 = automatic, 1 = manual)
+[,10]	gear	Number of forward gears
+[,11]	carb	Number of carburetors
+```
+
+### Box plot
+
+```{r boxplot, fig.width=8, fig.height=6}
+ggplot(mtcars, aes(factor(am, labels = c(
+    "automatic", "manual"
+)), mpg, fill = factor(am))) +
+    geom_boxplot() +
+    labs(x = "Transmission type", y="Miles per gallon")
+```
+
+\pagebreak
+
+### Pairs plot
+
+```{r ggpair, fig.width = 15, fig.height = 15, echo = FALSE, cache=TRUE} 
+ggpairs(mtcars, lower = list(
+    continuous = "smooth")
+)
+```
+
+### Regression diagnostics plot
+```{r reg_diag_plot, fig.width=10, fig.height=8}
+par(mfrow = c(2, 2))
+plot(bestModel)
+```
+
+### Session info
+
+```{r}
+sessionInfo()
+```
+
