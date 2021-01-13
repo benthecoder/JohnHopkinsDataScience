@@ -16,11 +16,11 @@ No | Course Name | Date Completed | Link to Repo
 3 | [Getting and Cleaning Data](Notes/c3/c3.html) | October 31, 2020 | [Link](3_Getting%26CleaningData)
 4 | [Exploratory Data Analysis](Notes/c4/c4.html) | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
 5 | [Reproducible Research](Notes/c5/c5.html)| November 19, 2020 | [Link](5_ReproducibleResearch)
-6 | [Statistical Inference](Notes/c6/c6.html) | 17th December, 2020 | [Link](6_StatisticalInference)
-7 | [Regression Model](Notes/c7/c7.html) | Goal: 8th January, 2020 | [Link](7_RegressionModel)
-8 | [Practical Machine Learning](Notes/c8/c8.html) | Goal: 15th January, 2021 | 
-9 | [Developing Data Products](Notes/c9/c9.html) | Goal: 23rd January, 2021 | 
-10| Data Science Capstone | Goal: 31st January, 2021 | 
+6 | [Statistical Inference](Notes/c6/c6.html) | December 17, 2020 | [Link](6_StatisticalInference)
+7 | [Regression Model](Notes/c7/c7.html) | January 13, 2020 | [Link](7_RegressionModel)
+8 | [Practical Machine Learning](Notes/c8/c8.html) | Goal: January 20, 2021 | [Link](8_PracticalMachineLearning) 
+9 | [Developing Data Products](Notes/c9/c9.html) | Goal: January 30, 2021 | 
+10| Data Science Capstone | Goal: February 20, 2021 | 
 
 ##  Projects
 
@@ -37,10 +37,13 @@ No | Course Name | Date Completed | Link to Repo
   - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) ([html](5_ReproducibleResearch/knitr_project1/PA1_template.html)) ([rpubs](https://rpubs.com/benthecoder/691112))
   - [Storm Analysis](5_ReproducibleResearch/knitr_project2) ([html](5_ReproducibleResearch/knitr_project2/stormAnalysis.html)) ([rpubs](https://rpubs.com/benthecoder/storm-data-analysis))
 * Statistical Inference
-  - [Sample vs Theoretical Exponential Distribution](6_StatisticalInference/project) ([html](6_StatisticalInference/project/part_1/Part_1.html)) ([rpubs](https://rpubs.com/benthecoder/expl-distributions)) 
-  - [Basic Inference Analysis on ToothGrowth data](6_StatisticalInference/project) ([html](6_StatisticalInference/project/part_2/Part_2.html)) ([rpubs](https://rpubs.com/benthecoder/tooth-growth-inference)) 
-* Regression Models
+  - [Sample vs Theoretical Exponential Distribution](6_StatisticalInference/project) ([html](6_StatisticalInference/project/part_1/Part_1.html)) ([rpubs](https://rpubs.com/benthecoder/expl-distributions)) ([pdf](https://tinyurl.com/stats-inf-part1))
+  - [Basic Inference Analysis on ToothGrowth data](6_StatisticalInference/project) ([html](6_StatisticalInference/project/part_2/Part_2.html)) ([rpubs](https://rpubs.com/benthecoder/tooth-growth-inference)) ([pdf](https://tinyurl.com/stats-inf-part2))
+* Regression Models 
   - [Analysis of College Major by Income](https://www.kaggle.com/benthecoder/analysis-of-college-major-by-income-with-r)
+  - [mtcars data regression analysis](7_RegressionModel/project) ([html](/7_RegressionModel/project/mtcars_regression_analysis.html)) ([pdf](https://tinyurl.com/regmods-ben))
+
+
 
 ## Articles checklist
 
