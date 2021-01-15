@@ -58,21 +58,18 @@ No | Course Name | Date Completed | Link to Repo
 * [DS Specialization github io](http://datasciencespecialization.github.io)
 * [Data Science Specialization Course Notes by Xing Su](http://sux13.github.io/DataScienceSpCourseNotes/)
 
+
 ### College Classes
 * [Stats191 Intro to Applied Stats, Harvard](https://web.stanford.edu/class/stats191/#)
 
-### Blogs
 
-* [R bloggers](https://www.r-bloggers.com)
-* [Simply Statistics](https://simplystatistics.org)
-* [RStudio Blog](https://blog.rstudio.com)
-* [r4 stats](r4stats.com)
-* [Variance Explained](http://varianceexplained.org/posts/)
-* [Yihui's Blog](https://yihui.org/en/)
-* [Quick R by Data Camp](https://www.statmethods.net/index.html)
-* [Data imaginist](https://www.data-imaginist.com)
-* [Probably Overthinking it](https://www.allendowney.com/blog/)
-* [Julia Silge](https://juliasilge.com/blog/)
+### Fun Projects
+* [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
+
+
+### Podcasts
+* [Not So Standard Deviation](https://nssdeviations.com)
+
 
 ### Cheatsheets
 
@@ -84,6 +81,9 @@ No | Course Name | Date Completed | Link to Repo
 * [R Graph Gallery](https://www.r-graph-gallery.com)
 * [from Data to Viz](https://www.data-to-viz.com) 
 
+#### Machine Learning
+* [Machine Learning tips and tricks cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
+
 #### Statistics & Probability
 * [Probability Cheatsheet](https://tinyurl.com/prob-cheatsheet)
 * [Seeing Theory](https://seeing-theory.brown.edu/index.html)
@@ -93,8 +93,19 @@ No | Course Name | Date Completed | Link to Repo
 * [Quick-R](https://www.statmethods.net)
 * [Elementary Statistics with R](http://www.r-tutor.com/elementary-statistics)
 
-### Fun Projects
-* [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
+
+### Blogs
+* [R bloggers](https://www.r-bloggers.com)
+* [Simply Statistics](https://simplystatistics.org)
+* [RStudio Blog](https://blog.rstudio.com)
+* [r4 stats](r4stats.com)
+* [Variance Explained](http://varianceexplained.org/posts/)
+* [Data imaginist](https://www.data-imaginist.com)
+* [Probably Overthinking it](https://www.allendowney.com/blog/)
+* [Yihui's Blog](https://yihui.org/en/)
+* [Julia Silge](https://juliasilge.com/blog/)
+* [Vicki Boykis](https://veekaybee.github.io/)
+
 
 ### Twitter accounts
 
@@ -107,12 +118,8 @@ No | Course Name | Date Completed | Link to Repo
 * [Thomas Lin Pedersen](https://twitter.com/thomasp85)
 * [Nathan Yao](https://twitter.com/flowingdata)
 
-### Podcasts
-
-* [Not So Standard Deviation](https://nssdeviations.com)
 
 ### Books
-There are great books by great authors related to R programming. 
 
 #### From the course
 * [R for Data Science](https://r4ds.had.co.nz)
@@ -141,12 +148,14 @@ There are great books by great authors related to R programming.
 * [Data Skills for Reproducible Science](https://psyteachr.github.io/msc-data-skills/)
 * [Tidyverse Skills for Data Science](https://jhudatascience.org/tidyversecourse/)
 * [Advanced Data Science 2020](http://jtleek.com/ads2020/)
+* [Modern Data Science with R](https://mdsr-book.github.io/mdsr2e/)
 
 #### Statistic / Statistical Learning
 * [Introduction to Statistical Learning](https://statlearning.com)
 * [Statistical Inference via Data Science: A ModernDive into R and the tidyverse](https://moderndive.com)
 * [R For Statistical Learning](https://daviddalpiaz.github.io/r4sl/)
 * [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
+* [Modern Statistics with R](http://modernstatisticswithr.com/)
 
 #### Machine Learning
 * [Machine Learning](https://m-clark.github.io/introduction-to-machine-learning/)
