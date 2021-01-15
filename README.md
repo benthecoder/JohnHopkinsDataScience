@@ -17,7 +17,7 @@ No | Course Name | Date Completed | Link to Repo
 4 | [Exploratory Data Analysis](Notes/c4/c4.html) | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
 5 | [Reproducible Research](Notes/c5/c5.html)| November 19, 2020 | [Link](5_ReproducibleResearch)
 6 | [Statistical Inference](Notes/c6/c6.html) | December 17, 2020 | [Link](6_StatisticalInference)
-7 | [Regression Model](Notes/c7/c7.html) | January 13, 2020 | [Link](7_RegressionModel)
+7 | [Regression Model](Notes/c7/c7.html) | January 13, 2021 | [Link](7_RegressionModel)
 8 | [Practical Machine Learning](Notes/c8/c8.html) | Goal: January 20, 2021 | [Link](8_PracticalMachineLearning) 
 9 | [Developing Data Products](Notes/c9/c9.html) | Goal: January 30, 2021 | 
 10| Data Science Capstone | Goal: February 20, 2021 | 
