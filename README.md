@@ -121,6 +121,7 @@ There are great books by great authors related to R programming.
 * [Report Writing for Data Science in R](https://leanpub.com/reportwriting)
 * [Statistical Inference for Data Science](https://leanpub.com/LittleInferenceBook/read)
 * [Regression models for Data Science in R](https://leanpub.com/regmods/read)
+* [The Caret Package](https://topepo.github.io/caret/index.html)
 
 #### Beginner
 * [An Introduction to R](https://intro2r.com)
