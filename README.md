@@ -163,6 +163,7 @@ No | Course Name | Date Completed | Link to Repo
 * [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
 * [Advanced Statistical Computing](https://bookdown.org/rdpeng/advstatcomp/)
 * [Tidy Modeling with R](https://www.tmwr.org)
+* [Applied predictive Model](https://tinyurl.com/applied-predictive-model)
 
 #### Supplementary 
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
