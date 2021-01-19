@@ -59,18 +59,6 @@ No | Course Name | Date Completed | Link to Repo
 * [Data Science Specialization Course Notes by Xing Su](http://sux13.github.io/DataScienceSpCourseNotes/)
 
 
-### College Classes
-* [Stats191 Intro to Applied Stats, Harvard](https://web.stanford.edu/class/stats191/#)
-
-
-### Fun Projects
-* [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
-
-
-### Podcasts
-* [Not So Standard Deviation](https://nssdeviations.com)
-
-
 ### Cheatsheets
 
 #### R
@@ -81,8 +69,13 @@ No | Course Name | Date Completed | Link to Repo
 * [R Graph Gallery](https://www.r-graph-gallery.com)
 * [from Data to Viz](https://www.data-to-viz.com) 
 
+#### Data Science
+* [data-science-cheetsheet](https://github.com/ml874/Data-Science-Cheatsheet/blob/master/data-science-cheatsheet.pdf) 
+
 #### Machine Learning
 * [Machine Learning tips and tricks cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
+* [Super VIP cheatsheet](https://sgfin.github.io/files/cheatsheets/cs229_2018_cheatsheet.pdf)
+* [ML glossary](https://ml-cheatsheet.readthedocs.io/en/latest/index.html)
 
 #### Statistics & Probability
 * [Probability Cheatsheet](https://tinyurl.com/prob-cheatsheet)
@@ -91,32 +84,10 @@ No | Course Name | Date Completed | Link to Repo
 * [harvard stats](https://tinyurl.com/harvard-stats)
 * [stanford](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics)
 * [Quick-R](https://www.statmethods.net)
-* [Elementary Statistics with R](http://www.r-tutor.com/elementary-statistics)
 
-
-### Blogs
-* [R bloggers](https://www.r-bloggers.com)
-* [Simply Statistics](https://simplystatistics.org)
-* [RStudio Blog](https://blog.rstudio.com)
-* [r4 stats](r4stats.com)
-* [Variance Explained](http://varianceexplained.org/posts/)
-* [Data imaginist](https://www.data-imaginist.com)
-* [Probably Overthinking it](https://www.allendowney.com/blog/)
-* [Yihui's Blog](https://yihui.org/en/)
-* [Julia Silge](https://juliasilge.com/blog/)
-* [Vicki Boykis](https://veekaybee.github.io/)
-
-
-### Twitter accounts
-
-* [RStudio](https://twitter.com/rstudio)
-* [RStudio Tips](https://twitter.com/rstudiotips)
-* [One R Tip a Day](https://twitter.com/RLangTip)
-* [Roger D. Peng](https://twitter.com/rdpeng)
-* [Hadley Wickham](https://twitter.com/hadleywickham)
-* [Mine Çetinkaya-Rundel](https://twitter.com/minebocek)
-* [Thomas Lin Pedersen](https://twitter.com/thomasp85)
-* [Nathan Yao](https://twitter.com/flowingdata)
+#### Linear Algebra
+* [Linear Algebra Review and Reference](https://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdf)
+* [Berkeley Linear Algebra Cheatsheet](https://math.berkeley.edu/~peyam/Math54Fa11/Cheat%20Sheets/Cheat%20Sheet%20(tiny%20font,%20no%20margins).pdf)
 
 
 ### Books
@@ -171,6 +142,43 @@ No | Course Name | Date Completed | Link to Repo
 * [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
 * [Text Mining with R](https://www.tidytextmining.com)
 * [blogdown](https://bookdown.org/yihui/blogdown/)
+
+
+### College Classes
+* [Stats191 Intro to Applied Stats, Harvard](https://web.stanford.edu/class/stats191/#)
+
+
+### Fun Projects
+* [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) ([Article](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/))
+
+
+### Podcasts
+* [Not So Standard Deviation](https://nssdeviations.com)
+
+
+### Blogs
+* [R bloggers](https://www.r-bloggers.com)
+* [Simply Statistics](https://simplystatistics.org)
+* [RStudio Blog](https://blog.rstudio.com)
+* [r4 stats](r4stats.com)
+* [Variance Explained](http://varianceexplained.org/posts/)
+* [Data imaginist](https://www.data-imaginist.com)
+* [Probably Overthinking it](https://www.allendowney.com/blog/)
+* [Yihui's Blog](https://yihui.org/en/)
+* [Julia Silge](https://juliasilge.com/blog/)
+* [Vicki Boykis](https://veekaybee.github.io/)
+
+
+### Twitter accounts
+
+* [RStudio](https://twitter.com/rstudio)
+* [RStudio Tips](https://twitter.com/rstudiotips)
+* [One R Tip a Day](https://twitter.com/RLangTip)
+* [Roger D. Peng](https://twitter.com/rdpeng)
+* [Hadley Wickham](https://twitter.com/hadleywickham)
+* [Mine Çetinkaya-Rundel](https://twitter.com/minebocek)
+* [Thomas Lin Pedersen](https://twitter.com/thomasp85)
+* [Nathan Yao](https://twitter.com/flowingdata)
 
 ---
 
