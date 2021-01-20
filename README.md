@@ -88,7 +88,7 @@ No | Course Name | Date Completed | Link to Repo
 #### Linear Algebra
 * [Linear Algebra Review and Reference](https://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdf)
 * [Berkeley Linear Algebra Cheatsheet](https://math.berkeley.edu/~peyam/Math54Fa11/Cheat%20Sheets/Cheat%20Sheet%20(tiny%20font,%20no%20margins).pdf)
-
+* [Intro to Linear Algebra for Applied ML w Python](https://pabloinsente.github.io/intro-linear-algebra)
 
 ### Books
 
