@@ -16,12 +16,6 @@ One thing that people regularly do is quantify how *much* of a particular activi
 
 The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases
 
-## Executive summary
-
-Using a random forest classifier with a k-fold cross validation of 7, the optimal model has an **accuracy of 0.993** and an OOB rate of **0.66%**. The variable importance plot shows that the roll_belt variable was most important in predicting the `classe` variable.
-
-Applying our model on the test set, we attain a similar **accuracy of 0.993**. Applying the model on the 20 test case in our validation set, we achieve 100% accuracy in predicting the right `classe` variable.
-
 ## What you should submit
 The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases. 
 
@@ -34,8 +28,16 @@ Apply your machine learning algorithm to the 20 test cases available in the test
 ## Reproducibility 
 Due to security concerns with the exchange of R code, your code will not be run during the evaluation by your classmates. Please be sure that if they download the repo, they will be able to view the compiled HTML version of your analysis. 
 
+---
+
 ## Files description
 * Figs - plots from prediction diagnostics
 * human-activity-prediction.Rmd - rmarkdown file for project
 * human-activity-prediction.html - compiled html 
 * rfmodel.rds - random forest model saved in rds file for faster knitting
+
+## Executive summary
+
+Using a random forest classifier with a k-fold cross validation of 7, the optimal model has an **accuracy of 0.993** and an OOB rate of **0.66%**. The variable importance plot shows that the roll_belt variable was most important in predicting the `classe` variable.
+
+Applying our model on the test set, we attain a similar **accuracy of 0.993**. Applying the model on the 20 test case in our validation set, we achieve 100% accuracy in predicting the right `classe` variable.
