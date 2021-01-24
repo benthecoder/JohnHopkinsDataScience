@@ -43,7 +43,7 @@ No | Course Name | Date Completed | Link to Repo
   - [Analysis of College Major by Income](https://www.kaggle.com/benthecoder/analysis-of-college-major-by-income-with-r)
   - [mtcars data regression analysis](7_RegressionModel/project) ([html](/7_RegressionModel/project/mtcars_regression_analysis.html)) ([pdf](https://tinyurl.com/regmods-ben))
 * Practical Machine Learning
-  - [Human Activity Prediction with Caret](/8_PracticalMachineLearning/Final-project/) ([html](/8_PracticalMachineLearning/Final-project/human-activity-prediction.html))
+  - [Human Activity Prediction with Caret](8_PracticalMachineLearning/Final-project/) ([html](/8_PracticalMachineLearning/Final-project/human-activity-prediction.html))
 
 
 ## Articles checklist
