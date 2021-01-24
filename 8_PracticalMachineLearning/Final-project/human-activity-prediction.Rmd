@@ -1,0 +1,262 @@
+---
+title: "Human Activity Prediction with R"
+author: "Benedict Neo"
+date: January 24, 2021
+output:
+  html_document:
+    toc: true
+    fig_caption: true
+---
+
+```{r global-options, include=FALSE}
+knitr::opts_chunk$set(
+    fig.width = 8,
+    fig.height = 6,
+    fig.path = 'Figs/',
+    echo = TRUE,
+    warning = FALSE,
+    message = FALSE
+)
+options(knitr.table.format = "html") 
+```
+
+## Background
+
+Using devices such as *Jawbone Up*, *Nike FuelBand*, and *Fitbit* it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self movement -- a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks.
+
+One thing that people regularly do is quantify how *much* of a particular activity they do, but they rarely quantify *how well they do it*. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. More information is available from the website [here](http://web.archive.org/web/20161224072740/http:/groupware.les.inf.puc-rio.br/har): (see the section on the Weight Lifting Exercise Dataset).
+
+### Data
+
+-   The training data for this project are available [here](https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv)
+
+-   The test data are available [here](https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv)
+
+-   The data for this project come from this [source](http://web.archive.org/web/20161224072740/http:/groupware.les.inf.puc-rio.br/har)
+
+### Goal
+
+The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases
+
+## Executive summary
+
+Using a random forest classifier with a k-fold cross validation of 7, the optimal model has an **accuracy of 0.993** and an OOB rate of **0.66%**. The variable importance plot shows that the roll_belt variable was most important in predicting the `classe` variable.
+
+Applying our model on the test set, we attain a similar **accuracy of 0.993**. Applying the model on the 20 test case in our validation set, we achieve 100% accuracy in predicting the right `classe` variable.
+
+------------------------------------------------------------------------
+
+## Loading Packages
+
+```{r packages}
+pacman::p_load(data.table, caret, parallel, doParallel, purrr, visdat, dplyr, printr, kableExtra, corrplot, e1071, randomForest)
+```
+
+### Loading Data
+
+```{r data}
+# training
+url_train <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"
+
+training <- fread(url_train,
+                  na.strings = c("#DIV/0", "", "NA"),
+                  stringsAsFactors = TRUE)
+    
+# testing data
+url_test <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"
+
+testing <- fread(url_test,
+                 na.strings = c("#DIV/0", "", "NA"),
+                 stringsAsFactors = TRUE)
+
+```
+
+## Data Preprocessing
+
+```{r glimpse}
+# glimpse(training)
+```
+
+Looking at our data (output is too large), we see there's a total of 160 variables that we have to build our model. Most of these variables are not useful for building our prediction model, especially the first 7 columns, which are just rowno., usernames, timestamps, etc.
+
+```{r subset}
+training <- training[, -c(1:7)]
+testing <- testing[, -c(1:7)]
+```
+
+```{r dim1}
+rbind(training = dim(training),
+      testing = dim(testing)) %>%
+      kbl() %>%
+      kable_classic(full_width = F, html_font = "Cambria")
+```
+
+Next to reduce the unnecessary variables, we set a threshold for the amount of NAs a variable has in our data. I'm going to set the threshold as 70% and use the discard function from the purrr package to discard the variables. (Another way to do this is by using `nearZeroVar` function which finds variables with near zero variability or with PCA)
+
+```{r re-na}
+# function to remove columns with NAs
+na_remove_col <- function(data, threshold) {
+    data %>%
+        discard(~ sum(is.na(.x)) / length(.x) * 100 > threshold)
+}
+
+clean_train <- na_remove_col(training, 70)
+
+clean_test <- na_remove_col(testing, 70)
+
+rbind(training = dim(clean_train),
+      testing = dim(clean_test)) %>%
+      kbl() %>%
+      kable_classic(full_width = F, html_font = "Cambria")
+```
+
+Now we see that exactly 100 variables were removed after the threshold.
+
+## Data Partition
+
+The data we have is a training data set and a validation data set. The standard procedure is to partition our training set into train and test set, and then apply our final model to our validation set. The function `createDataPartition` will be used to split our data.
+
+```{r data-partition}
+set.seed(2021) # for reproducability
+
+inTrain <- createDataPartition(clean_train$classe, p=0.7, list=FALSE)
+
+train <- clean_train[inTrain, ]
+test <- clean_train[-inTrain, ]
+```
+
+Now we have our training and test data which is 70% and 30% of our initial training data respectively.
+
+## Exploratory Data Analysis
+
+By doing a bit of EDA on our training data, we can observe whether there are variables which are highly correlated using the `corrplot` library.
+
+```{r corrplot}
+corr_data <- select_if(train, is.numeric)
+corrplot(
+    cor(corr_data),
+    method = "color",
+    tl.pos = "n",
+    insig = "blank"
+)
+```
+
+Our correlation plot shows that the most of our variables are not very correlated. With the exception of the first few columns at the upper left, and columns at the middle. Correlated variables can bring about issues when we use it for building models such as Random forest, which is the model I will be using for this prediction.
+
+## Prediction
+
+### Random forest Model
+
+To predict the `classe` variable in our data, which is a factor variable, what we need is a classifier model. I'm going to use a random forest model because it's a flexible and easy to use ensemble learning algorithm that provides high accuracy predictions through cross-validation.
+
+### Setting Parallel Processing
+
+That said, building random forest models can be computationally expensive, so we'll be setting registering for parallel processing with the `parallel` and `doParallel` packages.
+
+```{r parallel, eval=FALSE}
+cluster <- makeCluster(detectCores() - 1) 
+registerDoParallel(cluster)
+```
+
+### Building the model
+
+As said before, random forest uses cross-validation to randomly split the fitted training set into train and test sets based on the given k-folds (k), in this case 7, in the `trainControl` function. This means our model will be trained 7 times based on the cross-validated data. We also set `allowParallel` as True to allow for parallel processing.
+
+Using Caret, model training can be done with the `train` function, and our method is "rf" which stands for random forest, and we preProcess with PCA.
+
+```{r rfmodel, eval=FALSE}
+set.seed(2021)
+
+fitControl <- trainControl(method = "cv",
+                           number = 7,
+                           allowParallel = TRUE)
+
+rf.fit <- train(
+    classe ~ .,
+    method = "rf",
+    data = train,
+    trControl = fitControl
+)
+
+# stop cluster
+stopCluster(cluster)
+registerDoSEQ()
+
+# save model into an rds file to save time
+saveRDS(rf.fit,file="rfmodel.rds")
+```
+
+After training the model, we stop the clusters, and then save the model into an rds file to save time. We can then load it later and perform a downstream analysis.
+
+Now we measure our model performance with statistics like kappa and accuracy, along with some plots.
+
+### Model Performance
+
+```{r model-output}
+model.rf <- readRDS(file = "rfmodel.rds")
+model.rf
+```
+
+From the results, we see that the optimal model, has an **accuracy of 0.99**
+
+```{r final-model}
+model.rf$finalModel
+```
+
+The OOB is our out of sample rate, which is **0.66%**. This means our accuracy is considered high and acceptable for our prediction.
+
+Below you see the plot for the error of each `classe` prediction as the no of trees increase, and we see that as we reach around 150 trees, the OOB becomes flat, and we can use 150 as the `ntrees` for our `trcontrol` if we decide to further fine-tune our model.
+
+```{r oob-plot}
+plot(model.rf$finalModel)
+```
+
+### Variable Importance
+
+```{r varimp-plot, fig.height=6, fig.width=8}
+importance <- varImp(model.rf, scale = FALSE)
+plot(importance, top=10)
+```
+
+`VarImp` function by R tells us that from our model, the most important feature in predicting the classe variable is `roll_belt` .
+
+### Prediction on test set
+
+Using our trained model, we can apply it to our test set, and observe the accuracy.
+
+```{r pred-test}
+pred.rf <- predict(model.rf, test)
+confM <- confusionMatrix(test$classe, pred.rf)
+confM$table %>%
+  kbl() %>%
+  kable_paper("hover", full_width = F)
+```
+
+```{r pred-test-acc}
+confM$overall["Accuracy"]
+```
+
+We obtain an **accuracy of 0.99**, which means only around 1% of `classe` variables were falsely classified.
+
+## Final Prediction on Validation
+
+Finally we apply our model to the 20 test cases given in the validation data.
+
+```{r pred-final}
+final.pred.rf <- predict(model.rf, clean_test)
+summary(final.pred.rf)
+```
+
+```{r pred-final2}
+final.pred.rf
+```
+
+## Session info
+
+```{r sessionInfo}
+sessionInfo()
+```
+
+## Citation
+
+[Ugulino, W.](http://groupware.les.inf.puc-rio.br/collaborator.jsf?p1=ugulino); [Cardador, D.](http://groupware.les.inf.puc-rio.br/collaborator.jsf?p1=debora); [Vega, K.](http://groupware.les.inf.puc-rio.br/collaborator.jsf?p1=katia); [Velloso, E.](http://groupware.les.inf.puc-rio.br/collaborator.jsf?p1=evelloso); Milidiu, R.; [Fuks, H.](http://groupware.les.inf.puc-rio.br/collaborator.jsf?p1=hugo) [**Wearable Computing: Accelerometers' Data Classification of Body Postures and Movements**](http://groupware.les.inf.puc-rio.br/work.jsf?p1=10335 "Wearable Computing: Accelerometers' Data Classification of Body Postures and Movements"). Proceedings of 21st Brazilian Symposium on Artificial Intelligence. Advances in Artificial Intelligence - SBIA 2012. In: Lecture Notes in Computer Science. , pp. 52-61. Curitiba, PR: Springer Berlin / Heidelberg, 2012. ISBN 978-3-642-34458-9. DOI: 10.1007/978-3-642-34459-6_6.
