@@ -101,6 +101,7 @@ No | Course Folder | Date Completed | Notes
 * [Statistical Inference for Data Science](https://leanpub.com/LittleInferenceBook/read)
 * [Regression models for Data Science in R](https://leanpub.com/regmods/read)
 * [The Caret Package](https://topepo.github.io/caret/index.html)
+* [Developing Data Products in R](https://seankross.com/developing-data-products/)
 
 #### Beginner
 * [An Introduction to R](https://intro2r.com)
