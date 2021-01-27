@@ -9,18 +9,18 @@ This Specialization covers the concepts and tools you'll need throughout the ent
 
 This Data Science specialization contains 10 courses and the first five courses are also a part of the Data Science: Foundations using R specialization.
 
-No | Course Name | Date Completed | Link to Repo 
+No | Course Folder | Date Completed | Notes 
 :---: |:---:  | :---: | :---: 
-1 | [The Data Scientist's Toolbox](Notes/c1/c1.html)  | August 29, 2020 | [Link](1_DataScienceToolbox)
-2 | [R Programming](Notes/c2/c2.html) |  October 19, 2020 | [Link](2_Rprogramming)
-3 | [Getting and Cleaning Data](Notes/c3/c3.html) | October 31, 2020 | [Link](3_Getting%26CleaningData)
-4 | [Exploratory Data Analysis](Notes/c4/c4.html) | November 12, 2020 | [Link](4_ExploratoryDataAnalysis)
-5 | [Reproducible Research](Notes/c5/c5.html)| November 19, 2020 | [Link](5_ReproducibleResearch)
-6 | [Statistical Inference](Notes/c6/c6.html) | December 17, 2020 | [Link](6_StatisticalInference)
-7 | [Regression Model](Notes/c7/c7.html) | January 13, 2021 | [Link](7_RegressionModel)
-8 | [Practical Machine Learning](Notes/c8/c8.html) | Goal: January 20, 2021 | [Link](8_PracticalMachineLearning) 
-9 | [Developing Data Products](Notes/c9/c9.html) | Goal: January 30, 2021 | 
-10| Data Science Capstone | Goal: February 20, 2021 | 
+1 | [The Data Scientist's Toolbox](1_DataScienceToolbox)  | August 29th, 2020 | [Notes](Notes/c1/c1.html)
+2 | [R Programming](2_Rprogramming) |  October 19th, 2020 | [Notes](Notes/c2/c2.html)
+3 | [Getting and Cleaning Data](3_Getting%26CleaningData) | October 31st, 2020 | [Notes](Notes/c3/c3.html)
+4 | [Exploratory Data Analysis](4_ExploratoryDataAnalysis) | November 12th, 2020 | [Notes](Notes/c4/c4.html)
+5 | [Reproducible Research](5_ReproducibleResearch)| November 19th, 2020 | [Notes](Notes/c5/c5.html)
+6 | [Statistical Inference](6_StatisticalInference) | December 17th, 2020 | [Notes](Notes/c6/c6.html)
+7 | [Regression Model](7_RegressionModel) | January 13th, 2021 | [Notes](Notes/c7/c7.html)
+8 | [Practical Machine Learning](8_PracticalMachineLearning) | January 25th, 2021 | [Notes](Notes/c8/c8.html) 
+9 | [Developing Data Products](9_DevelopingDataProducts) | Goal: January 30rd, 2021 | [Notes](Notes/c9/c9.html)
+10| Data Science Capstone | Goal: February 20rd, 2021 | -
 
 ##  Projects
 
