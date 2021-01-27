@@ -63,8 +63,8 @@ In vs out of sample error
 * generally in sample < out of sample error (models overfit to data used to train)
 
 Sample division guide
-* large sample size -> train(60)|test(20)|validation(20)
-* medium -> train(60)|test(40)
+* large sample size -> train(60)/test(20)/validation(20)
+* medium -> train(60)/test(40)
 * small -> no test or validation (must report caveat of no out of sample error)
 * there must always be test or validation sets
 * Data sets must reflect structure of problem
@@ -111,7 +111,7 @@ stronger one.
 
 
 Model based prediction (Generative Learning)
-* estimates P(x|y) and uses it to estimate P(y|x) using Bayes
+* uses bayes rules to estimate data class
 * Types - LDA, Naive Bayes
 
 Model selection
