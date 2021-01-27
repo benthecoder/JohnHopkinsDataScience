@@ -3,6 +3,13 @@ A data product is the production output from a statistical analysis. Data produc
 
 You will learn how communicate using statistics and statistical products. Emphasis will be paid to communicating uncertainty in statistical results. You will learn how to create simple Shiny web applications and R packages for their data products. In addition, we'll cover reproducible presentations and interactive graphics.
 
+Course content
+1. Shiny, rCharts, manipulate, googleVis 
+2. Presenting data analysis, slidify, R Studio presenter. 
+3. Students creating and deploying their projects 
+4. Creating R packages, classes and methods, yhat.
+
+
 ## Articles 
 
 Coming Soon!
