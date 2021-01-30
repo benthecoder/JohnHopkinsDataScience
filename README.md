@@ -144,7 +144,7 @@ No | Course Folder | Date Completed | Notes
 * [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
 * [Text Mining with R](https://www.tidytextmining.com)
 * [blogdown](https://bookdown.org/yihui/blogdown/)
-
+* [R Packages](https://r-pkgs.org/index.html)
 
 ### College Classes
 * [Stats191 Intro to Applied Stats, Harvard](https://web.stanford.edu/class/stats191/#)
