@@ -44,7 +44,10 @@ No | Course Folder | Date Completed | Notes
   - [mtcars data regression analysis](7_RegressionModel/project) ([html](/7_RegressionModel/project/mtcars_regression_analysis.html)) ([pdf](https://tinyurl.com/regmods-ben))
 * Practical Machine Learning
   - [Human Activity Prediction with Caret](8_PracticalMachineLearning/Final-project/) ([html](/8_PracticalMachineLearning/Final-project/human-activity-prediction.html))
-
+* Developing Data Products
+  - [Starbucks locations in the US](https://rpubs.com/benthecoder)
+  - [R Markdown presentation with plotly]()
+  - [Swirl in Shiny app]() 
 
 ## Articles checklist
 
