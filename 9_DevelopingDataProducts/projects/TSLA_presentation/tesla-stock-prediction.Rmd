@@ -1,0 +1,92 @@
+---
+title: "Tesla Stock Prediction"
+author: "Benedict Neo"
+date: "1/31/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = FALSE,
+    warning = FALSE,
+    message = FALSE
+)
+options(knitr.table.format = "html") 
+```
+
+```{r libraries}
+# plotting
+library(ggplot2)
+
+# table format
+library(kableExtra)
+
+# forecasting
+library(quantmod)
+library(forecast)
+library(tseries)
+
+theme_set(theme_classic() + theme(
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14, face = "bold")
+))
+```
+
+
+## Description
+
+In this project, I will be using R to predict the TSLA stock.
+
+I will use the ARIMA modelling, more specifically, auto ARIMA to predict the stock 
+rise. 
+
+(Disclaimer) This is presentation is not to be taken as an investment advice. 
+
+
+## The Tesla Stock Data
+
+The data will be is from [Yahoo! Finance](https://finance.yahoo.com/).
+
+Here's a peek at the data
+
+```{r results="hide"}
+# specify to and from dates
+from.dat <- as.Date("01/31/11", format="%m/%d/%y")
+to.dat <- as.Date("01/31/21", format="%m/%d/%y")
+
+# get data for AAPL from Google Finance for the specified dates
+getSymbols("TSLA", src="yahoo", from = from.dat, to = to.dat, auto.assign=TRUE)
+```
+
+
+```{r }
+head(TSLA) %>%
+      kbl() %>%
+      kable_classic(full_width = F, html_font = "Cambria")
+```
+
+## Plot of TSLA.close stock
+
+```{r}
+mTSLA <- to.monthly(TSLA)
+
+# extract the closing price and convert it to yearly time series (12 observations per year)
+ts <- ts(Cl(mTSLA))
+
+# plot time series 
+plot(ts)
+
+# add the moving average in red
+lines(ma(ts,order=3),col="red")
+```
+
+
+## Prediction from ARIMA Model
+
+```{r}
+modFit <- auto.arima(ts, lambda = "auto")
+price_forecast <- forecast(modFit, h=30)
+plot(price_forecast)
+```
+
+From our prediction, it shows there was little possiblity our ARIMA model could ever predict the huge stock rise of tesla. 

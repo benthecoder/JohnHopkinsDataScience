@@ -1,0 +1,12 @@
+Package: topten
+Type: Package
+Title: Building a Prediction Model from top 10 Features
+Version: 1.0
+Author: Benedict Neo 
+Maintainer: Benedict Neo <benthecoder@gmail.com>
+Description: Functions for building and predicting from models from selecting 
+    the top 10 features
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1

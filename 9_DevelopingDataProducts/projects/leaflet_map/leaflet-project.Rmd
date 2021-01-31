@@ -1,0 +1,67 @@
+---
+title: "Starbucks Location in the United States Interactive Map with Leaflet"
+author: "Benedict Neo"
+date: January 30, 2021
+output:
+  html_document
+---
+
+<style>
+.leaflet {
+    margin: auto;
+}
+</style>
+
+## Load Libraries
+
+```{r libraries, message=FALSE, warning=FALSE}
+library(leaflet)
+library(data.table)
+library(dplyr)
+```
+
+## Get the data
+```{r}
+url <- "https://raw.githubusercontent.com/chrismeller/StarbucksLocations/master/stores.csv"
+starbucks <- fread(url)
+```
+
+```{r, comment = ""}
+starbucks %>%
+    names()
+```
+
+Since I'm only plotting starbucks locations in the US, I will be filtering the data based on the country. Also, I only require the name, longitude and latitude, so I'll be using dplyr to select the columns, and then rename the lat and long columns. 
+
+## Data Preprocessing
+```{r}
+sb_loc <- starbucks %>% 
+    filter(CountryCode == "US") %>% 
+    select(Latitude, Longitude, Name) %>% 
+    rename(lat = Latitude, lng = Longitude)
+
+# names(starbucks_latlong)
+```
+
+## Creating the map
+
+```{r, fig.align="center", fig.width=8, fig.height=5}
+m <- leaflet(sb_loc) %>%
+    addProviderTiles(providers$Esri.NatGeoWorldMap) %>%
+    addCircleMarkers(
+        ~ lng,
+        ~ lat,
+        popup = sb_loc$Name,
+        weight = 3,
+        radius = 4,
+        stroke = F,
+        fillOpacity = 0.5,
+        clusterOptions = markerClusterOptions()
+    )
+m
+
+```
+
+<br> 
+
+From our beautiful map we can see most Starbucks coffee places are at California and New York.

@@ -1,0 +1,12 @@
+name: COVID-19_Dashboard
+title: COVID-19_Dashboard
+username:
+account: benthecoder
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3554267
+bundleId: 4163624
+url: https://benthecoder.shinyapps.io/COVID-19_Dashboard/
+when: 1612106815.07557
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,68 @@
+---
+title: "Animation of GDP and life expectancy"
+author: "Benedict Neo"
+date: "1/31/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = FALSE,
+    warning = FALSE,
+    message = FALSE
+)
+options(knitr.table.format = "html") 
+```
+
+```{r libraries}
+library(plotly)
+library(gapminder)
+library(kableExtra)
+
+theme_set(theme_classic() + theme(axis.text=element_text(size=12),
+        axis.title=element_text(size=14,face="bold")))
+```
+
+## The Gapminder Data
+
+* read more about the data [here](https://cran.r-project.org/web/packages/gapminder/README.html)
+* here's a peek at the data
+```{r, comment = "##"}
+data(gapminder)
+head(gapminder) %>%
+      kbl() %>%
+      kable_classic(full_width = F, html_font = "Cambria")
+```
+
+## Animation with ggplotly
+
+```{r plot, fig.width = 8, fig.height = 5}
+gg <- ggplot(gapminder, aes(gdpPercap, lifeExp, color = continent)) +
+    geom_point(aes(
+        size = pop,
+        frame = year,
+        ids = country,
+        alpha = 0.3
+    )) +
+    scale_x_log10(labels = scales::dollar_format())
+
+ggplotly(gg)
+```
+
+## Thanks for viewing my presentation!
+
+Here's the code for the plot 
+
+```{r, echo = TRUE, eval = FALSE}
+gg <- ggplot(gapminder, aes(gdpPercap, lifeExp, color = continent)) +
+    geom_point(aes(
+        size = pop,
+        frame = year,
+        ids = country,
+        alpha = 0.3
+    )) +
+    scale_x_log10(labels = scales::dollar_format())
+
+ggplotly(gg)
+```
+
