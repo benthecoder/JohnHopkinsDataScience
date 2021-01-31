@@ -46,8 +46,9 @@ No | Course Folder | Date Completed | Notes
   - [Human Activity Prediction with Caret](8_PracticalMachineLearning/Final-project/) ([html](/8_PracticalMachineLearning/Final-project/human-activity-prediction.html))
 * Developing Data Products
   - [Starbucks locations in the US](https://rpubs.com/benthecoder/starbucks-us)
-  - [R Markdown presentation with plotly]()
-  - [Swirl in Shiny app]() 
+  - [GDP and life expectancy Animation with Plotly](https://rpubs.com/benthecoder/gapminder-plotly)
+  - [Swirl in Shiny app]()
+  - [Reproducible Presentation]() 
 
 ## Articles checklist
 
