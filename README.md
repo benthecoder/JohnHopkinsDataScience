@@ -45,7 +45,7 @@ No | Course Folder | Date Completed | Notes
 * Practical Machine Learning
   - [Human Activity Prediction with Caret](8_PracticalMachineLearning/Final-project/) ([html](/8_PracticalMachineLearning/Final-project/human-activity-prediction.html))
 * Developing Data Products
-  - [Starbucks locations in the US](https://rpubs.com/benthecoder)
+  - [Starbucks locations in the US](https://rpubs.com/benthecoder/starbucks-us)
   - [R Markdown presentation with plotly]()
   - [Swirl in Shiny app]() 
 
