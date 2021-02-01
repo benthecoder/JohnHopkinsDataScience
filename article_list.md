@@ -67,6 +67,22 @@
 - [ ] Poisson regression
 
 ## Practical Machine Learning
+- [ ] Prediction study design
+- [ ] In sample and out of sample errors
+- [ ] Overfitting
+- [ ] Receiver Operating Characteristic (ROC) curves
+- [ ] The caret package in R
+- [ ] Preprocessing and feature creation
+- [ ] Prediction with regression
+- [ ] Prediction with decision trees
+- [ ] Prediction with random forests
+- [ ] Boosting
+- [ ] Prediction blending
 
 ## Developing Data Products
-
+- [ ] Plotly animation
+- [ ] Leaflet map tutorial
+- [ ] How are R packages made
+- [ ] How to dockerize a shiny app
+- [ ] R presentations
+- [ ] How to uninstall R 
