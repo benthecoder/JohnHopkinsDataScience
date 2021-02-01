@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/719763/1ead6580f16748859c79156497ba3a14
+bundleId: https://api.rpubs.com/api/v1/document/719763/1ead6580f16748859c79156497ba3a14
+url: http://rpubs.com/benthecoder/719763
+when: 1612144645.11831

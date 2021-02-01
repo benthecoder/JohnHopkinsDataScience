@@ -47,7 +47,8 @@ No | Course Folder | Date Completed | Notes
 * Developing Data Products
   - [Starbucks locations in the US](https://rpubs.com/benthecoder/starbucks-us)
   - [GDP and life expectancy Animation with Plotly](https://rpubs.com/benthecoder/gapminder-plotly)
-  - [COVID-19 Dashboard with Shiny]( https://benthecoder.shinyapps.io/COVID-19_Dashboard/)
+  - [COVID-19 Dashboard with Shiny](https://benthecoder.shinyapps.io/COVID-19_Dashboard/)
+  - [Covid-19 Shiny app Presentation](https://rpubs.com/benthecoder/covid-19-slidy)
   - [Tesla Stock Prediction with ARIMA](https://rpubs.com/benthecoder/tsla-arima) 
 
 ## Articles checklist
