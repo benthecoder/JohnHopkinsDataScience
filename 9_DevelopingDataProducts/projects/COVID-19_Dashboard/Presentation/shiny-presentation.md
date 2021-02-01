@@ -1,7 +1,7 @@
 ---
 title: "Analysis of the COVID-19 Dashboard"
 author: "Benedict Neo"
-date: "1/31/2021"
+date: "31/1/2021"
 output:
   slidy_presentation: default
   html_document:
