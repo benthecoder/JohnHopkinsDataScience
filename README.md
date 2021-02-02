@@ -19,8 +19,8 @@ No | Course Folder | Date Completed | Notes
 6 | [Statistical Inference](6_StatisticalInference) | December 17th, 2020 | [Notes](Notes/c6/c6.html)
 7 | [Regression Model](7_RegressionModel) | January 13th, 2021 | [Notes](Notes/c7/c7.html)
 8 | [Practical Machine Learning](8_PracticalMachineLearning) | January 25th, 2021 | [Notes](Notes/c8/c8.html) 
-9 | [Developing Data Products](9_DevelopingDataProducts) | Goal: January 30rd, 2021 | [Notes](Notes/c9/c9.html)
-10| Data Science Capstone | Goal: February 20rd, 2021 | -
+9 | [Developing Data Products](9_DevelopingDataProducts) | February 1st, 2021 | [Notes](Notes/c9/c9.html)
+10| Data Science Capstone | Goal: February 30th, 2021 | -
 
 ##  Projects
 
