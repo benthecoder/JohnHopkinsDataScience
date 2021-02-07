@@ -29,9 +29,9 @@ No | Course Folder | Date Completed | Notes
   - [Cache Matrix](2_Rprogramming/cache-matrix)
   - [Hospital Ranking](2_Rprogramming/hospital_ranking) ([html](2_Rprogramming/hospital_ranking/hospital_ranking.html)) ([rpubs](https://rpubs.com/benthecoder/hospital-ranking)) 
 * Getting and Cleaning Data
-  - [Tidy Data](3_Getting%26CleaningData/tidy_data)
+  - [Tidy Data](3_Getting%26CleaningData/tidy_data) ([kaggle](https://www.kaggle.com/benthecoder/getting-and-cleaning-data-with-r))
 * Exploratory Data Analysis
-  - [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/)
+  - [Electric Power Consuption EDA](4_ExploratoryDataAnalysis/Project1/) ([kaggle](https://www.kaggle.com/benthecoder/electric-power-consumption-eda-with-ggplotly))
   - [PM2.5 Air pollutant EDA](4_ExploratoryDataAnalysis/Project2/)
 * Reproducible Research
   - [Activity Monitoring Analysis](5_ReproducibleResearch/knitr_project1) ([html](5_ReproducibleResearch/knitr_project1/PA1_template.html)) ([rpubs](https://rpubs.com/benthecoder/691112))
