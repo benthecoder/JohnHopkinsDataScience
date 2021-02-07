@@ -46,10 +46,10 @@ No | Course Folder | Date Completed | Notes
   - [Human Activity Prediction with Caret](8_PracticalMachineLearning/Final-project/) ([html](/8_PracticalMachineLearning/Final-project/human-activity-prediction.html))
 * Developing Data Products
   - [Starbucks locations in the US](https://rpubs.com/benthecoder/starbucks-us)
-  - [GDP and life expectancy Animation with Plotly](https://rpubs.com/benthecoder/gapminder-plotly)
+  - [GDP and life expectancy Animation with Plotly Presentation](https://rpubs.com/benthecoder/gapminder-plotly)
   - [COVID-19 Dashboard with Shiny](https://benthecoder.shinyapps.io/COVID-19_Dashboard/)
   - [Covid-19 Shiny app Presentation](https://rpubs.com/benthecoder/covid-19-slidy)
-  - [Tesla Stock Prediction with ARIMA](https://rpubs.com/benthecoder/tsla-arima) 
+  - [Tesla Stock Prediction with ARIMA Presentation](https://rpubs.com/benthecoder/tsla-arima) 
 
 ## Articles checklist
 
