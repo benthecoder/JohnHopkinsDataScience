@@ -44,6 +44,7 @@ No | Course Folder | Date Completed | Notes
   - [mtcars data regression analysis](7_RegressionModel/project) ([html](/7_RegressionModel/project/mtcars_regression_analysis.html)) ([pdf](https://tinyurl.com/regmods-ben))
 * Practical Machine Learning
   - [Human Activity Prediction with Caret](8_PracticalMachineLearning/Final-project/) ([html](/8_PracticalMachineLearning/Final-project/human-activity-prediction.html))
+  - [Human Activity Prediction with tidymodels](https://www.kaggle.com/benthecoder/human-activity-data-classification-with-tidymodels)
 * Developing Data Products
   - [Starbucks locations in the US](https://rpubs.com/benthecoder/starbucks-us)
   - [GDP and life expectancy Animation with Plotly Presentation](https://rpubs.com/benthecoder/gapminder-plotly)
