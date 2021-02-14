@@ -4,7 +4,6 @@ Repository for my code for the course [John Hopkins Data Science Specialization]
 ## About the specialization
 This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results. In the final Capstone Project, you’ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material.
  
-
 ### Specialization courses
 
 This Data Science specialization contains 10 courses and the first five courses are also a part of the Data Science: Foundations using R specialization.
@@ -59,6 +58,8 @@ No | Course Folder | Date Completed | Notes
 ---
 
 ## Resources 
+
+{:toc}
 
 ### Official repo and notes
 * [DS Specialization github repo](https://github.com/DataScienceSpecialization/courses)
