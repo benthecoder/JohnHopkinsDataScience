@@ -59,8 +59,6 @@ No | Course Folder | Date Completed | Notes
 
 ## Resources 
 
-{:toc}
-
 ### Official repo and notes
 * [DS Specialization github repo](https://github.com/DataScienceSpecialization/courses)
 * [DS Specialization github io](http://datasciencespecialization.github.io)
@@ -167,16 +165,16 @@ No | Course Folder | Date Completed | Notes
 
 
 ### Blogs
+* [Julia Silge](https://juliasilge.com/blog/)
+* [Tidyverse blog](https://www.tidyverse.org/blog/)
 * [R bloggers](https://www.r-bloggers.com)
 * [Simply Statistics](https://simplystatistics.org)
-* [Julia Silge](https://juliasilge.com/blog/)
 * [RStudio Blog](https://blog.rstudio.com)
 * [Variance Explained](http://varianceexplained.org/posts/)
 * [Data imaginist](https://www.data-imaginist.com)
 * [Probably Overthinking it](https://www.allendowney.com/blog/)
 * [Vicki Boykis](https://veekaybee.github.io/)
 * [Roel's R-tefacts](https://blog.rmhogervorst.nl/)
-* [Tidyverse blog](https://www.tidyverse.org/blog/)
 * [Shirin's playgRound](https://shirinsplayground.netlify.app/)
 * [That's so Random](https://edwinth.github.io/)
 * [Jozef Rblog](https://jozef.io/)
