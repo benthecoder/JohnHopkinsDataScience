@@ -19,7 +19,7 @@ No | Course Folder | Date Completed | Notes
 7 | [Regression Model](7_RegressionModel) | January 13th, 2021 | [Notes](Notes/c7/c7.html)
 8 | [Practical Machine Learning](8_PracticalMachineLearning) | January 25th, 2021 | [Notes](Notes/c8/c8.html) 
 9 | [Developing Data Products](9_DevelopingDataProducts) | February 1st, 2021 | [Notes](Notes/c9/c9.html)
-10| Data Science Capstone(10_DataScienceCapstone) | Goal: March 30th, 2021 | -
+10| [Data Science Capstone](10_DataScienceCapstone) | Goal: March 30th, 2021 | -
 
 ##  Projects
 
