@@ -1,6 +1,7 @@
 # load libraries
 library(shiny)
 library(shinythemes)
+library(shinydashboard)
 library(plotly)
 library(COVID19)
 
