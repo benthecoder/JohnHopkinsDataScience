@@ -4,10 +4,10 @@
 $header-bg-color: hsla(0, 0%, 0%, 1);
 $header-bg-color-secondary: hsla(0, 0%, 0%, 1);
 
-$dark-header-bg-color: hsl(4deg, 100%, 38%);
-$dark-header-bg-color-secondary: hsl(25deg, 100%, 38%);
+$dark-header-bg-color: hsla(0, 0%, 0%, 1);
+$dark-header-bg-color-secondary: hsla(0, 0%, 0%, 1);
 
-$section-headings-color: hsl(16deg, 100%, 55%);
+$section-headings-color: hsl(0, 100%, 100%);
 $body-link-color: hsl(4deg, 100%, 55%);
 
 @import "{{ site.theme }}";
