@@ -79,6 +79,7 @@ No | Course Folder | Date Completed | Notes
 * [data-science-cheetsheet](https://github.com/ml874/Data-Science-Cheatsheet/blob/master/data-science-cheatsheet.pdf) 
 * [4 page ds cheatsheet](https://github.com/aaronwangy/Data-Science-Cheatsheet/blob/main/Data_Science_Cheatsheet.pdf)
 * [ml-primer](https://www.confetti.ai/assets/ml-primer/ml_primer.pdf)
+* [Cheat Sheets for Machine Learning and Data Science](https://sites.google.com/view/datascience-cheat-sheets)
 
 #### Machine Learning
 * [Machine Learning tips and tricks cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
