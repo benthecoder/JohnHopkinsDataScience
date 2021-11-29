@@ -70,5 +70,3 @@ View it online [here](https://coursera.org/share/82097f1d7caeadd28b22d2a7c79724b
 ![Certificate for entire specialization](certificate_files/data-science.png)
 
 View it online [here](https://coursera.org/share/d803065efd7094456cb90036937ad8a6)
-
-- To be completed
