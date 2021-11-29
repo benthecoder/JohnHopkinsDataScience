@@ -1,1 +1,3 @@
 remote_theme: lewismiddleton/cayman-dark
+gems:
+  - jekyll-seo-tag
